@@ -71,7 +71,7 @@ int main(void)
             store(address, file_length);
         } else if (strcmp(input, "jal") == 0) {
             uint32_t address = ascii_hex_to_uint32(read_token(buffer, BUFFER_LEN, " \x0d"));
-
+            //uwrite_int8s("jjj");
             entry_t start = (entry_t)(address);
             start();
         } else if (strcmp(input, "lw") == 0) {

@@ -35,7 +35,7 @@ module bios_testbench();
   integer i, j;
   reg [31:0] cycle;
   always @(posedge clk) begin
-    if (rst === 1)
+    if (rst === 0)
       cycle <= 0;
     else
       cycle <= cycle + 1;
@@ -111,14 +111,14 @@ module bios_testbench();
     $dumpvars;
 
     #0;
-    rst = 1;
+    rst = 0;
     serial_in = 1;
 
     // Hold reset for a while
     repeat (10) @(posedge clk);
 
     @(negedge clk);
-    rst = 0;
+    rst = 1;
 
     // Delay for some time
     repeat (10) @(posedge clk);
@@ -183,6 +183,7 @@ module bios_testbench();
 
         fpga_to_host(8'h0a); // \n
         fpga_to_host(8'h0d); // \r
+
         fpga_to_host(8'h31); // 1
         fpga_to_host(8'h35); // 5
         fpga_to_host(8'h31); // 1
@@ -191,7 +192,7 @@ module bios_testbench();
 
       end
     join
-
+      
     // Test store command in BIOS mode
     $display("[TEST 3] Send [sw cafeaaaa 30000004] command. Expect to write 32'hcafeaaaa to both IMem[1] and DMem[1]");
     fork
@@ -362,8 +363,13 @@ module bios_testbench();
         fpga_to_host(8'h30); // '0'
         fpga_to_host(8'h30); // '0'
         fpga_to_host(8'h0d); // \r
+        fpga_to_host(8'h0a); // \n
+	//fpga_to_host(8'h6a); // 'j'
+	//fpga_to_host(8'h6a); // 'j'
+	//fpga_to_host(8'h6a); // 'j'
       end
     join
+
 
     // The instruction in IMem should be executed after jumping to IMem space
     $display("Test RF: RF[3]=%h", `RF_PATH.mem[3]);

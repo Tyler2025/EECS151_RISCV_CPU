@@ -13,14 +13,14 @@ if {![file exists $sources_file]} {
 if {[file exists ${project_name}_proj/${project_name}_proj.xpr]} {
   open_project ${project_name}_proj/${project_name}_proj.xpr
 } else {
-  create_project -force ${project_name}_proj ${project_name}_proj -part xc7z020clg400-1
-  set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
+  create_project -force ${project_name}_proj ${project_name}_proj -part xc7a35tfgg484-2
+  #set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
 }
 
 source $sources_file
 
 # Add constraint file
-add_files -fileset constrs_1 -norecurse constr/pynq-z1.xdc
+add_files -fileset constrs_1 -norecurse constr/z1top.xdc
 
 update_compile_order -fileset sources_1
 

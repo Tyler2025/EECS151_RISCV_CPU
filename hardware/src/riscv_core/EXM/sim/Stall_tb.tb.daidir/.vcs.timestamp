@@ -1,0 +1,147 @@
+0 
+50
++define+FSDB
++itf+/home/synopsys/vcs/O-2018.09-SP2/linux64/lib/vcsdp.tab
++lint=all,noVCDE,noNS,noSVA-UA
++memcbk
++vcsd
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/home/synopsys/vcs/O-2018.09-SP2/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /home/synopsys/vcs/O-2018.09-SP2/linux64/lib/libvirsim.so /home/synopsys/vcs/O-2018.09-SP2/linux64/lib/liberrorinf.so /home/synopsys/vcs/O-2018.09-SP2/linux64/lib/libsnpsmalloc.so /home/synopsys/vcs/O-2018.09-SP2/linux64/lib/libvfs.so
+-Mout=Stall_tb.tb
+-Msaverestoreobj=/home/synopsys/vcs/O-2018.09-SP2/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/home/synopsys/vcs/O-2018.09-SP2/include
+-P
+-Xnotice=1
+-Xvcs_run_simv=1
+-debug_access
+-debug_access+all+bc
+-debug_region+cell
+-fsdb
+-full64
+-gen_obj
+-l
+-line
+-o Stall_tb.tb
+-picarchive
+-sverilog
+-timescale=1ns/10ps
+-top
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/ALU.v
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Branch_comp.v
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/PCSrc.v
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Stall.v
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/ALU_tb.v
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Branch_Comp_tb.v
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/PCSrc_tb.v
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Stall_tb.v
+/home/synopsys/vcs/O-2018.09-SP2/linux64/bin/vcs1
+/home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/verdi.tab
+Stall_tb
+run.log
+75
+sysc_uni_pwd=/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim
+ZSP_HOME_G5=/home/ICer/Project/Verisilicon/VSI_SOC_RELEASE_r1p2/ZView
+XMODIFIERS=@im=ibus
+XDG_VTNR=1
+XDG_SESSION_TYPE=x11
+XDG_SESSION_ID=1
+XDG_SESSION_DESKTOP=gnome-classic
+XDG_SEAT=seat0
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/home/ICer/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+XDG_CURRENT_DESKTOP=GNOME-Classic:GNOME
+XAUTHORITY=/run/gdm/auth-for-ICer-QCeRV5/database
+WINDOWPATH=1
+VTE_VERSION=5204
+VMR_MODE_FLAG=64
+VERISILICON_LICENSE_PATH=6200@8.218.179.230
+VERDI_HOME=/home/synopsys/verdi/Verdi_O-2018.09-SP2
+VENDOR=unknown
+VCS_MODE_FLAG=64
+VCS_LOG_FILE=run.log
+VCS_HOME=/home/synopsys/vcs/O-2018.09-SP2
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+USERNAME=ICer
+UNAME=/bin/uname
+TOOL_HOME=/home/synopsys/vcs/O-2018.09-SP2/linux64
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+SSH_AGENT_PID=10562
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/10574,unix/unix:/tmp/.ICE-unix/10574
+SDSP_HOME=/home/ICer/Project/Verisilicon/VSI_SOC_RELEASE_r1p2/ZView/cmdtools
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+QT_IM_MODULE=ibus
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib/qt-3.3/lib
+QTINC=/usr/lib/qt-3.3/include
+QTDIR=/usr/lib/qt-3.3
+PRJ_SIM=/home/ICer/Project/Verisilicon/VSI_SOC_RELEASE_r1p4/Smart_Audio_SoC/sim
+PRJ_ROOT=/home/ICer/Project/Verisilicon/VSI_SOC_RELEASE_r1p4/Smart_Audio_SoC
+PRJ_DESIGN=/home/ICer/Project/Verisilicon/VSI_SOC_RELEASE_r1p4/Smart_Audio_SoC/design
+OVA_UUM=0
+OSTYPE=linux
+NOVAS_LICENSE_QUEUE=1
+MFLAGS=
+MAKE_TERMOUT=/dev/pts/2
+MAKE_TERMERR=/dev/pts/2
+MAKELEVEL=1
+MAKEFLAGS=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_TIME=zh_CN.UTF-8
+LC_PAPER=zh_CN.UTF-8
+LC_NUMERIC=zh_CN.UTF-8
+LC_MONETARY=zh_CN.UTF-8
+LC_MEASUREMENT=zh_CN.UTF-8
+LC_ALL=C
+KDEDIRS=/usr
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+HOSTTYPE=x86_64-linux
+HARDWARE_PLATFORM=x86_64
+GROUP=ICer
+GNOME_TERMINAL_SERVICE=:1.1181
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/b5a52636_0c7b_4841_a972_bcd243d582c0
+GNOME_SHELL_SESSION_MODE=classic
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GDM_LANG=zh_CN.UTF-8
+GDMSESSION=gnome-classic
+DESKTOP_SESSION=gnome-classic
+DBUS_STARTER_BUS_TYPE=session
+DBUS_STARTER_ADDRESS=unix:abstract=/tmp/dbus-KBzDI4h9cx,guid=2a92a114673618dd2a3850de64586de8
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-KBzDI4h9cx,guid=2a92a114673618dd2a3850de64586de8
+COLORTERM=truecolor
+0
+10
+1689246524 /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Stall.v
+1689240466 /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/PCSrc.v
+1689234318 /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Branch_comp.v
+1689218644 /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/ALU.v
+1689246795 /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Stall_tb.v
+1689240537 /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/PCSrc_tb.v
+1689234642 /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Branch_Comp_tb.v
+1689218849 /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/ALU_tb.v
+1550753332 /home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/verdi.tab
+1551421246 /home/synopsys/vcs/O-2018.09-SP2/linux64/lib/vcsdp.tab
+4
+1551422344 /home/synopsys/vcs/O-2018.09-SP2/linux64/lib/libvirsim.so
+1551421792 /home/synopsys/vcs/O-2018.09-SP2/linux64/lib/liberrorinf.so
+1551421768 /home/synopsys/vcs/O-2018.09-SP2/linux64/lib/libsnpsmalloc.so
+1551421789 /home/synopsys/vcs/O-2018.09-SP2/linux64/lib/libvfs.so
+1689246856 Stall_tb.tb.daidir
+-1 partitionlib

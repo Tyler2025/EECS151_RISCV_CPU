@@ -1,0 +1,32 @@
+debImport "-2001" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/pc_reg.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/sim/pc_reg_tb.v" \
+          "sim/pc_reg_tb.v"
+debLoadSimResult \
+           /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/sim/novas.fsdb
+wvCreateWindow
+srcHBSelect "pc_reg_tb.U_PC_REG_0" -win $_nTrace1
+verdiDockWidgetSetCurTab -dock widgetDock_<Decl._Tree>
+verdiDockWidgetSetCurTab -dock widgetDock_<Inst._Tree>
+srcHBSelect "pc_reg_tb.U_PC_REG_0" -win $_nTrace1
+srcSetScope -win $_nTrace1 "pc_reg_tb.U_PC_REG_0" -delim "."
+srcHBSelect "pc_reg_tb.U_PC_REG_0" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcHBDrag -win $_nTrace1
+wvRenameGroup -win $_nWave2 {G1} {U_PC_REG_0}
+wvAddSignal -win $_nWave2 "/pc_reg_tb/U_PC_REG_0/clk" \
+           "/pc_reg_tb/U_PC_REG_0/pcsrc\[1:0\]" \
+           "/pc_reg_tb/U_PC_REG_0/alu_addr\[31:0\]" \
+           "/pc_reg_tb/U_PC_REG_0/pc\[31:0\]" \
+           "/pc_reg_tb/U_PC_REG_0/next_pc\[31:0\]"
+wvSetPosition -win $_nWave2 {("U_PC_REG_0" 0)}
+wvSetPosition -win $_nWave2 {("U_PC_REG_0" 5)}
+wvSetPosition -win $_nWave2 {("U_PC_REG_0" 5)}
+wvSetCursor -win $_nWave2 10117.544876 -snap {("G2" 0)}
+wvSetCursor -win $_nWave2 1111.175449 -snap {("U_PC_REG_0" 1)}
+wvSetCursor -win $_nWave2 50002.895194 -snap {("U_PC_REG_0" 2)}
+wvSetCursor -win $_nWave2 50821.656051 -snap {("U_PC_REG_0" 4)}
+wvSetCursor -win $_nWave2 50002.895194 -snap {("U_PC_REG_0" 3)}
+wvSetCursor -win $_nWave2 50997.104806 -snap {("U_PC_REG_0" 4)}
+wvSetCursor -win $_nWave2 50002.895194 -snap {("U_PC_REG_0" 3)}
+debExit

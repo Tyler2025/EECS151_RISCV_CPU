@@ -1,0 +1,134 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -2001
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/ALU_tb.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Branch_Comp_tb.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/PCSrc_tb.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Stall_tb.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Forwarding_tb.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Uart_if_tb.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Cycle_Counters_tb.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Inst_Counters_tb.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/CSR_tb.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/exm_wb_regs_tb.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/WEN_align_tb.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Data_align_tb.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/ALU.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Data_align.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Branch_comp.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/PCSrc.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Stall.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Cycle_Counters.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Inst_Counters.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/CSR.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/exm_wb_regs.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Forwarding.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/WEN_align.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Uart_if.v
+    sim/ALU_tb.v
+    sim/Branch_Comp_tb.v
+    sim/CSR_tb.v
+    sim/Cycle_Counters_tb.v
+    sim/Data_align_tb.v
+    sim/exm_wb_regs_tb.v
+    sim/Forwarding_tb.v
+    sim/Inst_Counters_tb.v
+    sim/PCSrc_tb.v
+    sim/Stall_tb.v
+    sim/Uart_if_tb.v
+    sim/WEN_align_tb.v
+
+
+*Error* Syntax error at i
+"/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Data_align_tb.v", 28: 
+
+*Error* Syntax error at <
+"/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Data_align_tb.v", 28: 
+
+*Error* Syntax error at )
+"/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Data_align_tb.v", 28: 
+
+*Error* missing end in for statement
+"/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Data_align_tb.v", 28: 
+
+*Error* missing initial in for statement
+"/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Data_align_tb.v", 28: 
+
+*Warning* too many digits in hexadecimal
+"/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/CSR.v", 15: 
+
+*Error* Module ALU_tb redefined
+"sim/ALU_tb.v", 16: 
+
+*Error* Module Branch_Comp_tb redefined
+"sim/Branch_Comp_tb.v", 16: 
+
+*Error* Module CSR_tb redefined
+"sim/CSR_tb.v", 16: 
+
+*Error* Module Cycle_Counters_tb redefined
+"sim/Cycle_Counters_tb.v", 16: 
+
+*Error* Module Data_align_tb redefined
+"sim/Data_align_tb.v", 16: 
+
+*Error* Syntax error at i
+"sim/Data_align_tb.v", 28: 
+
+*Error* Syntax error at <
+"sim/Data_align_tb.v", 28: 
+
+*Error* Syntax error at )
+"sim/Data_align_tb.v", 28: 
+
+*Error* missing end in for statement
+"sim/Data_align_tb.v", 28: 
+
+*Error* missing initial in for statement
+"sim/Data_align_tb.v", 28: 
+
+*Error* Module exm_wb_regs_tb redefined
+"sim/exm_wb_regs_tb.v", 16: 
+
+*Error* Module Forwarding_tb redefined
+"sim/Forwarding_tb.v", 16: 
+
+*Error* Module Inst_Counters_tb redefined
+"sim/Inst_Counters_tb.v", 16: 
+
+*Error* Module PCSrc_tb redefined
+"sim/PCSrc_tb.v", 16: 
+
+*Error* Module Stall_tb redefined
+"sim/Stall_tb.v", 16: 
+
+*Error* Module Uart_if_tb redefined
+"sim/Uart_if_tb.v", 16: 
+
+*Error* Module WEN_align_tb redefined
+"sim/WEN_align_tb.v", 16: 
+Highest level modules:
+ALU_tb
+Branch_Comp_tb
+CSR_tb
+Cycle_Counters_tb
+Data_align_tb
+exm_wb_regs_tb
+Forwarding_tb
+Inst_Counters_tb
+PCSrc_tb
+Stall_tb
+Uart_if_tb
+WEN_align_tb
+
+
+*Error* failed to find identifier i
+"sim/Data_align_tb.v", 28: 
+
+*Error* failed to find identifier i
+"sim/Data_align_tb.v", 28: 
+
+*Error* failed to find identifier i
+"sim/Data_align_tb.v", 28: 
+Total	25 error(s),   1 warning(s)

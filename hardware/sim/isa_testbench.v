@@ -26,7 +26,7 @@ module isa_testbench();
 
   reg [31:0] cycle;
   always @(posedge clk) begin
-    if (rst === 1)
+    if (rst === 0)
       cycle <= 0;
     else
       cycle <= cycle + 1;
@@ -46,11 +46,11 @@ module isa_testbench();
     $readmemh(MIF_FILE, `DMEM_PATH.mem);
 
     // Reset the CPU
-    rst = 1;
+    rst = 0;
     repeat (30) @(posedge clk); // Hold reset for 30 cycles
 
     @(negedge clk);
-    rst = 0;
+    rst = 1;
 
     // Wait until csr[0] is asserted
     wait (csr[0] === 1'b1);

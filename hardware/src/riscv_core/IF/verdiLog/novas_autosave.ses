@@ -1,0 +1,82 @@
+@verdi rc file Version 1.0
+[General]
+saveDB = TRUE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 
+VerdiVersion = Verdi_O-2018.09-SP2
+[KeyNote]
+Line1 = Automatic Backup 0
+Line2 = Save Open Database Information: Yes
+Line3 = Path Option: Absolute Paths
+Line4 = Windows Option: All Windows
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+Console = FALSE
+powerDumped = 0
+[hb]
+postSimFile = /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/sim/novas.fsdb
+syncTime = 103000
+viewport = 0 27 1918 775 0 0 189 1916
+activeNode = "pc_reg_tb.U_PC_REG_0"
+activeScope = "pc_reg_tb.U_PC_REG_0"
+activeFile = "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/pc_reg.v"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 3
+baMode = False
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = False
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+powerAwareAnnot = True
+amsAnnot = True
+traceCrossHier = True
+DnDtraceCrossHierOnly = True
+traceIncTopPort = False
+leadingZero = False
+signalPane = False
+Scope1 = "pc_reg_tb.U_PC_REG_0"
+Scope2 = "pc_reg_tb"
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-2001" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/pc_reg.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/sim/pc_reg_tb.v" "sim/pc_reg_tb.v" 
+invokeDir = /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF
+[hb.sourceTab.1]
+scope = pc_reg_tb.U_PC_REG_0
+File = /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/pc_reg.v
+Line = 4
+[nMemoryManager]
+WaveformFile = /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/sim/novas.fsdb
+UserActionNum = 0
+nMemWindowNum = 0
+[wave.0]
+viewPort = 0 27 1918 282 116 65
+primaryWindow = TRUE
+SessionFile = /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/verdiLog/novas_autosave.ses.wave.0
+displayGrid = FALSE
+hierarchicalName = FALSE
+snap = TRUE
+displayLeadingZeros = FALSE
+fixDelta = FALSE
+displayCursorMarker = FALSE
+autoUpdate = FALSE
+highlightGlitchs = FALSE
+waveformSyncCursorMarker = FALSE
+waveformSyncHorizontalRange = FALSE
+waveformSyncVerticalscroll = FALSE
+displayErrors = TRUE
+displayMsgSymbols = TRUE
+showMsgDescriptions = TRUE
+autoFit = FALSE
+displayDeltaY = FALSE
+centerCursor = FALSE

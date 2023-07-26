@@ -2,6 +2,10 @@
 VERILOG_SRCS := $(wildcard src/*.v)
 VERILOG_SRCS += $(wildcard src/io_circuits/*.v)
 VERILOG_SRCS += $(wildcard src/riscv_core/*.v)
+VERILOG_SRCS += $(wildcard src/riscv_core/IF/*.v)
+VERILOG_SRCS += $(wildcard src/riscv_core/ID/*.v)
+VERILOG_SRCS += $(wildcard src/riscv_core/EXM/*.v)
+VERILOG_SRCS += $(wildcard src/riscv_core/WB/*.v)
 VERILOG_SRCS += $(wildcard src/accelerator/*.v)
 VERILOG_SIMS := $(wildcard sim/*.v)
 
@@ -107,7 +111,7 @@ wave: $(sim_vcd)
 proj := z1top
 Z1TOP_XPR = $(proj)_proj/$(proj)_proj.xpr
 
-clk := 20
+clk := 15
 port_number := 3121
 
 $(Z1TOP_XPR): $(VERILOG_SRCS) $(BIOS_MIF)

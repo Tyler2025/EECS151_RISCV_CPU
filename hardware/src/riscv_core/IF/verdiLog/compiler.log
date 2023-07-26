@@ -1,0 +1,15 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -2001
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/pc_reg.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/sim/pc_reg_tb.v
+    sim/pc_reg_tb.v
+
+
+*Error* Module pc_reg_tb redefined
+"sim/pc_reg_tb.v", 16: 
+Highest level modules:
+pc_reg_tb
+
+Total	1 error(s),   0 warning(s)

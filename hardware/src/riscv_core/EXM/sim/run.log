@@ -1,0 +1,121 @@
+Command: vcs -full64 -notice -line +lint=all,noVCDE,noNS,noSVA-UA -sverilog -timescale=1ns/10ps \
+-debug_all -R +define+FSDB -debug_access -o Data_align_tb.tb /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/ALU_tb.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Branch_Comp_tb.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/PCSrc_tb.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Stall_tb.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Forwarding_tb.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Uart_if_tb.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Cycle_Counters_tb.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Inst_Counters_tb.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/CSR_tb.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/exm_wb_regs_tb.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/WEN_align_tb.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Data_align_tb.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/ALU.v /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Data_align.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Branch_comp.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/PCSrc.v /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Stall.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Cycle_Counters.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Inst_Counters.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/CSR.v /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/exm_wb_regs.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Forwarding.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/WEN_align.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Uart_if.v -top \
+Data_align_tb -l run.log
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Sun Jul 16 16:35:28 2023
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_all' will be deprecated in a future release.  Please use 
+  '-debug_acc+all -debug_region+cell+encrypt' instead.
+
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/ALU_tb.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Branch_Comp_tb.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/PCSrc_tb.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Stall_tb.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Forwarding_tb.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Uart_if_tb.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Cycle_Counters_tb.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Inst_Counters_tb.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/CSR_tb.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/exm_wb_regs_tb.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/WEN_align_tb.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Data_align_tb.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/ALU.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Data_align.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Branch_comp.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/PCSrc.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Stall.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Cycle_Counters.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Inst_Counters.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/CSR.v'
+
+Warning-[TMBIN] Too many bits in Based Number
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/CSR.v, 15
+  The specified width is '12' bits, actually got '20' bits.
+  The offending number is : '0x51E'.
+
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/exm_wb_regs.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Forwarding.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/WEN_align.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Uart_if.v'
+Top Level Modules:
+       Data_align_tb
+TimeScale is 1 ns / 1 ps
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Data_align_tb.v, 29
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 4-bit pack expression is assigned to 32-bit expression on the 
+  LHS
+  Source info: MEMWen = (MEMWen + 1);
+  Expression: MEMWen
+
+Starting vcs inline pass...
+1 module and 0 UDP read.
+Generating code for _VCSgd_reYIK
+Generating code for _VCSgd_Vh4S5
+recompiling module Data_align_tb
+make[1]: Entering directory '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/csrc' \
+
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../Data_align_tb.tb ]; then chmod -x ../Data_align_tb.tb; fi
+g++  -o ../Data_align_tb.tb    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/Data_align_tb.tb.daidir/ \
+-Wl,-rpath=./Data_align_tb.tb.daidir/ -Wl,-rpath='$ORIGIN'/Data_align_tb.tb.daidir//scsim.db.dir \
+-rdynamic  -Wl,-rpath=/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib -L/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib \
+objs/amcQw_d.o   _84210_archive_1.so _prev_archive_1.so  SIM_l.o       rmapats_mop.o \
+rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          -lzerosoft_rt_stubs \
+-lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive        _vcs_pli_stub_.o   /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_save_restore_new.o \
+/home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm \
+-lpthread -ldl 
+../Data_align_tb.tb up to date
+make[1]: Leaving directory '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/csrc' \
+
+Command: /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/./Data_align_tb.tb +lint=all,noVCDE,noNS,noSVA-UA +define+FSDB -a run.log
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-1_Full64; Runtime version O-2018.09-1_Full64;  Jul 16 16:35 2023
+*Verdi* Loading libsscore_vcs201809.so
+FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'novas.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+$finish called from file "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Data_align_tb.v", line 43.
+$finish at simulation time              1000000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1000000 ps
+CPU Time:      0.210 seconds;       Data structure size:   0.0Mb
+Sun Jul 16 16:35:29 2023
+CPU time: .221 seconds to compile + .149 seconds to elab + .251 seconds to link + .239 seconds in simulation

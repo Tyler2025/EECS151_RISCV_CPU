@@ -1,0 +1,41 @@
+[*]
+[*] GTKWave Analyzer v3.3.61 (w)1999-2014 BSI
+[*] Fri Jul 21 02:55:17 2023
+[*]
+[dumpfile] "/home/ICer/Project/project_skeleton_sp22/hardware/echo_testbench.vcd"
+[dumpfile_mtime] "Fri Jul 21 02:39:16 2023"
+[dumpfile_size] 211948030
+[savefile] "/home/ICer/Project/project_skeleton_sp22/hardware/echo.gtkw"
+[timestart] 0
+[size] 1918 775
+[pos] -39 -39
+*-16.104759 107800 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] echo_testbench.
+[treeopen] echo_testbench.CPU.
+[sst_width] 229
+[signals_width] 215
+[sst_expanded] 1
+[sst_vpaned_height] 326
+@28
+echo_testbench.clk
+echo_testbench.rst
+echo_testbench.serial_in
+echo_testbench.serial_out
+@22
+echo_testbench.CPU.EXM_inst[31:0]
+@28
+echo_testbench.CPU.Uart_if_u1.data_out_valid
+echo_testbench.CPU.Uart_if_u1.data_out_ready
+@22
+echo_testbench.CPU.Uart_if_u1.control[31:0]
+echo_testbench.CPU.ldout[31:0]
+echo_testbench.CPU.Uart_if_u1.data_out[7:0]
+@28
+echo_testbench.CPU.Uart_if_u1.data_in_ready
+@22
+echo_testbench.CPU.Uart_if_u1.data_out_reg[7:0]
+@28
+echo_testbench.CPU.Uart_if_u1.data_out_valid_reg
+echo_testbench.CPU.Uart_if_u1.data_in_valid
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,58 @@
+debImport "-2001" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/ALU_tb.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Branch_Comp_tb.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/PCSrc_tb.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Stall_tb.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Forwarding_tb.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Uart_if_tb.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Cycle_Counters_tb.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Inst_Counters_tb.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/CSR_tb.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/exm_wb_regs_tb.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/WEN_align_tb.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/ALU.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/WEN_align.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Branch_comp.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/PCSrc.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Stall.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Cycle_Counters.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Inst_Counters.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/CSR.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/exm_wb_regs.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Forwarding.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Uart_if.v" \
+          "sim/ALU_tb.v" "sim/Branch_Comp_tb.v" "sim/CSR_tb.v" \
+          "sim/Cycle_Counters_tb.v" "sim/exm_wb_regs_tb.v" \
+          "sim/Forwarding_tb.v" "sim/Inst_Counters_tb.v" "sim/PCSrc_tb.v" \
+          "sim/Stall_tb.v" "sim/Uart_if_tb.v" "sim/WEN_align_tb.v"
+debLoadSimResult \
+           /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/novas.fsdb
+wvCreateWindow
+srcHBSelect "WEN_align_tb" -win $_nTrace1
+srcSetScope -win $_nTrace1 "WEN_align_tb" -delim "."
+srcHBSelect "WEN_align_tb" -win $_nTrace1
+srcHBSelect "WEN_align_tb.U_WEN_ALIGN_0" -win $_nTrace1
+srcSetScope -win $_nTrace1 "WEN_align_tb.U_WEN_ALIGN_0" -delim "."
+srcHBSelect "WEN_align_tb.U_WEN_ALIGN_0" -win $_nTrace1
+srcHBDrag -win $_nTrace1
+wvRenameGroup -win $_nWave2 {G1} {U_WEN_ALIGN_0}
+wvAddSignal -win $_nWave2 "/WEN_align_tb/U_WEN_ALIGN_0/MEMWen_in\[3:0\]" \
+           "/WEN_align_tb/U_WEN_ALIGN_0/address\[31:0\]" \
+           "/WEN_align_tb/U_WEN_ALIGN_0/MEMWen_out\[3:0\]"
+wvSetPosition -win $_nWave2 {("U_WEN_ALIGN_0" 0)}
+wvSetPosition -win $_nWave2 {("U_WEN_ALIGN_0" 3)}
+wvSetPosition -win $_nWave2 {("U_WEN_ALIGN_0" 3)}
+wvSetCursor -win $_nWave2 13050.214329 -snap {("G2" 0)}
+wvSelectSignal -win $_nWave2 {( "U_WEN_ALIGN_0" 1 )} 
+wvSelectGroup -win $_nWave2 {G2}
+wvSetCursor -win $_nWave2 5999.387630 -snap {("G2" 0)}
+wvSetCursor -win $_nWave2 0.000000
+wvSetCursor -win $_nWave2 1113.288426
+wvSetCursor -win $_nWave2 1113.288426
+wvSetCursor -win $_nWave2 6123.086344
+wvSetCursor -win $_nWave2 13916.105328 -snap {("U_WEN_ALIGN_0" 1)}
+wvSetCursor -win $_nWave2 13916.105328 -snap {("U_WEN_ALIGN_0" 2)}
+wvSetCursor -win $_nWave2 16018.983466 -snap {("U_WEN_ALIGN_0" 1)}
+wvSetCursor -win $_nWave2 26471.524801 -snap {("U_WEN_ALIGN_0" 3)}
+wvSetCursor -win $_nWave2 36058.175138 -snap {("U_WEN_ALIGN_0" 3)}
+debExit

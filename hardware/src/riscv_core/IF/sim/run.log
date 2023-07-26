@@ -1,0 +1,100 @@
+Command: vcs -full64 -notice -line +lint=all,noVCDE,noNS,noSVA-UA -sverilog -timescale=1ns/10ps \
+-debug -R +define+FSDB -debug_access -o pc_reg_tb.tb /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/pc_reg.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/sim/pc_reg_tb.v \
+-top pc_reg_tb -l run.log
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Thu Jul  6 11:33:15 2023
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option 'debug=4' will be deprecated in a future release.  Please use 
+  '-debug_acc+pp+f+fn+dmptf -debug_region+cell+encrypt' instead.
+
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/pc_reg.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/sim/pc_reg_tb.v'
+Top Level Modules:
+       pc_reg_tb
+TimeScale is 1 ns / 1 ps
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/sim/pc_reg_tb.v, 30
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 1-bit pack expression is assigned to 32-bit expression on the 
+  LHS
+  Source info: clk = 0;
+  Expression: clk
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/sim/pc_reg_tb.v, 31
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 2-bit pack expression is assigned to 32-bit expression on the 
+  LHS
+  Source info: pcsrc = 0;
+  Expression: pcsrc
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/sim/pc_reg_tb.v, 33
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 2-bit pack expression is assigned to 32-bit expression on the 
+  LHS
+  Source info: pcsrc = 1;
+  Expression: pcsrc
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/sim/pc_reg_tb.v, 35
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 2-bit pack expression is assigned to 32-bit expression on the 
+  LHS
+  Source info: pcsrc = 2;
+  Expression: pcsrc
+
+Starting vcs inline pass...
+1 module and 0 UDP read.
+Generating code for _VCSgd_reYIK
+Generating code for _VCSgd_Rih98
+recompiling module pc_reg_tb
+make[1]: Entering directory '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/sim/csrc' \
+
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../pc_reg_tb.tb ]; then chmod -x ../pc_reg_tb.tb; fi
+g++  -o ../pc_reg_tb.tb    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/pc_reg_tb.tb.daidir/ \
+-Wl,-rpath=./pc_reg_tb.tb.daidir/ -Wl,-rpath='$ORIGIN'/pc_reg_tb.tb.daidir//scsim.db.dir \
+-rdynamic  -Wl,-rpath=/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib -L/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib \
+objs/amcQw_d.o   _70002_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o \
+rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          -lzerosoft_rt_stubs -lvirsim \
+-lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive        _vcs_pli_stub_.o   /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_save_restore_new.o \
+/home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm \
+-lpthread -ldl 
+../pc_reg_tb.tb up to date
+make[1]: Leaving directory '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/sim/csrc' \
+
+Command: /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/sim/./pc_reg_tb.tb +lint=all,noVCDE,noNS,noSVA-UA +define+FSDB -a run.log
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-1_Full64; Runtime version O-2018.09-1_Full64;  Jul  6 11:33 2023
+*Verdi* Loading libsscore_vcs201809.so
+FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'novas.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+$finish called from file "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/sim/pc_reg_tb.v", line 51.
+$finish at simulation time              1000000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1000000 ps
+CPU Time:      0.310 seconds;       Data structure size:   0.0Mb
+Thu Jul  6 11:33:17 2023
+CPU time: .335 seconds to compile + .314 seconds to elab + .228 seconds to link + .342 seconds in simulation

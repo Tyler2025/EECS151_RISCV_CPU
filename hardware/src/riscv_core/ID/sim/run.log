@@ -1,0 +1,81 @@
+Command: vcs -full64 -notice -line +lint=all,noVCDE,noNS,noSVA-UA -sverilog -timescale=1ns/10ps \
+-debug_all -R +define+FSDB -debug_access -o id_exm_regs_tb.tb /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/immgen_tb.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/control_tb.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/id_exm_regs_tb.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/immgen.v /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/control.v \
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/id_exm_regs.v \
+-top id_exm_regs_tb -l run.log
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Jul 12 15:02:22 2023
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_all' will be deprecated in a future release.  Please use 
+  '-debug_acc+all -debug_region+cell+encrypt' instead.
+
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/immgen_tb.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/control_tb.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/id_exm_regs_tb.v'
+
+Warning-[TMBIN] Too many bits in Based Number
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/id_exm_regs_tb.v, 64
+  The specified width is '4' bits, actually got '8' bits.
+  The offending number is : '15'.
+
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/immgen.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/control.v'
+Parsing design file '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/id_exm_regs.v'
+Top Level Modules:
+       id_exm_regs_tb
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+1 module and 0 UDP read.
+Generating code for _VCSgd_reYIK
+Generating code for _VCSgd_UnAZF
+recompiling module id_exm_regs_tb
+make[1]: Entering directory '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/csrc' \
+
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic  -o .//../id_exm_regs_tb.tb.daidir//_csrc0.so objs/amcQw_d.o \
+
+rm -f _csrc0.so
+if [ -x ../id_exm_regs_tb.tb ]; then chmod -x ../id_exm_regs_tb.tb; fi
+g++  -o ../id_exm_regs_tb.tb    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/id_exm_regs_tb.tb.daidir/ \
+-Wl,-rpath=./id_exm_regs_tb.tb.daidir/ -Wl,-rpath='$ORIGIN'/id_exm_regs_tb.tb.daidir//scsim.db.dir \
+-rdynamic  -Wl,-rpath=/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib -L/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib \
+_7569_archive_1.so _prev_archive_1.so _csrc0.so  SIM_l.o  _csrc0.so     rmapats_mop.o \
+rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          -lzerosoft_rt_stubs \
+-lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive        _vcs_pli_stub_.o   /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_save_restore_new.o \
+/home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm \
+-lpthread -ldl 
+../id_exm_regs_tb.tb up to date
+make[1]: Leaving directory '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/csrc' \
+
+Command: /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/./id_exm_regs_tb.tb +lint=all,noVCDE,noNS,noSVA-UA +define+FSDB -a run.log
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-1_Full64; Runtime version O-2018.09-1_Full64;  Jul 12 15:02 2023
+*Verdi* Loading libsscore_vcs201809.so
+FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'novas.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+$finish called from file "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/id_exm_regs_tb.v", line 109.
+$finish at simulation time              1000000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1000000 ps
+CPU Time:      0.200 seconds;       Data structure size:   0.0Mb
+Wed Jul 12 15:02:23 2023
+CPU time: .187 seconds to compile + .217 seconds to elab + .198 seconds to link + .230 seconds in simulation

@@ -1,0 +1,4 @@
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/ALU.v
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Branch_comp.v
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/ALU_tb.v
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Branch_Comp_tb.v

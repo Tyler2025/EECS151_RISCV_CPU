@@ -1,0 +1,39 @@
+debImport "-2001" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/WB/sim/LDX_tb.v" \
+          "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/WB/LDX.v" \
+          "sim/LDX_tb.v"
+debLoadSimResult \
+           /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/WB/sim/novas.fsdb
+wvCreateWindow
+srcHBSelect "LDX_tb.U_LDX_0" -win $_nTrace1
+srcSetScope -win $_nTrace1 "LDX_tb.U_LDX_0" -delim "."
+srcHBSelect "LDX_tb.U_LDX_0" -win $_nTrace1
+srcHBDrag -win $_nTrace1
+wvRenameGroup -win $_nWave2 {G1} {U_LDX_0}
+wvAddSignal -win $_nWave2 "/LDX_tb/U_LDX_0/LDSel\[2:0\]" \
+           "/LDX_tb/U_LDX_0/memdout\[31:0\]" "/LDX_tb/U_LDX_0/ldout\[31:0\]"
+wvSetPosition -win $_nWave2 {("U_LDX_0" 0)}
+wvSetPosition -win $_nWave2 {("U_LDX_0" 3)}
+wvSetPosition -win $_nWave2 {("U_LDX_0" 3)}
+wvSetCursor -win $_nWave2 27136.074117 -snap {("G2" 0)}
+verdiDockWidgetMaximize -dock windowDock_nWave_2
+wvSetCursor -win $_nWave2 1579.038796
+wvSelectGroup -win $_nWave2 {G2}
+wvSetCursor -win $_nWave2 1052.692530 -snap {("U_LDX_0" 2)}
+wvSetCursor -win $_nWave2 2808.204004
+wvSetCursor -win $_nWave2 5850.425008
+wvSetCursor -win $_nWave2 10179.739514
+wvSetCursor -win $_nWave2 6084.442008
+wvSetCursor -win $_nWave2 10413.756514
+wvSetCursor -win $_nWave2 13631.490268
+wvSetCursor -win $_nWave2 17960.804774
+wvSetCursor -win $_nWave2 22699.649030
+wvSetCursor -win $_nWave2 26092.895535
+wvSetCursor -win $_nWave2 29720.159040
+wvSetCursor -win $_nWave2 29720.159040
+wvSetCursor -win $_nWave2 34107.977796
+wvSetCursor -win $_nWave2 29954.176040
+wvSetCursor -win $_nWave2 33756.952295
+wvSetCursor -win $_nWave2 37559.728550
+wvSetCursor -win $_nWave2 41655.026056
+debExit

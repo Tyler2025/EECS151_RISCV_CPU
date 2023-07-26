@@ -1,0 +1,399 @@
+#######################################################################################
+# log primitive debug message of FSDB dumping                                         #
+# This is for R&D to analyze when there are issues happening when FSDB dump           #
+#######################################################################################
+ANF: vcsd_get_serial_mode_status('LDX_tb.tb: undefined symbol: vcsd_get_serial_mode_status')
+ANF: vcsd_enable_sva_success_callback('LDX_tb.tb: undefined symbol: vcsd_enable_sva_success_callback')
+ANF: vcsd_disable_sva_success_callback('LDX_tb.tb: undefined symbol: vcsd_disable_sva_success_callback')
+ANF: vcsd_get_thread_id('LDX_tb.tb: undefined symbol: vcsd_get_thread_id')
+ANF: vcsd_get_power_scope_name('LDX_tb.tb: undefined symbol: vcsd_get_power_scope_name')
+ANF: vcsd_begin_no_value_var_info('LDX_tb.tb: undefined symbol: vcsd_begin_no_value_var_info')
+ANF: vcsd_end_no_value_var_info('LDX_tb.tb: undefined symbol: vcsd_end_no_value_var_info')
+ANF: vcsd_remove_xprop_merge_mode_callback('LDX_tb.tb: undefined symbol: vcsd_remove_xprop_merge_mode_callback')
+ANF: vcsd_node_check_native_callback('LDX_tb.tb: undefined symbol: vcsd_node_check_native_callback')
+ANF: vcsd_node_add_native_callback('LDX_tb.tb: undefined symbol: vcsd_node_add_native_callback')
+ANF: vcsdIsNativeVc('LDX_tb.tb: undefined symbol: vcsdIsNativeVc')
+ANF: vhpi_get_cb_info('LDX_tb.tb: undefined symbol: vhpi_get_cb_info')
+ANF: vhpi_free_handle('LDX_tb.tb: undefined symbol: vhpi_free_handle')
+ANF: vhpi_fetch_vcsd_handle('LDX_tb.tb: undefined symbol: vhpi_fetch_vcsd_handle')
+ANF: vhpi_fetch_vpi_handle('LDX_tb.tb: undefined symbol: vhpi_fetch_vpi_handle')
+ANF: vhpi_has_verilog_parent('LDX_tb.tb: undefined symbol: vhpi_has_verilog_parent')
+ANF: vhpi_is_verilog_scope('LDX_tb.tb: undefined symbol: vhpi_is_verilog_scope')
+ANF: scsd_xprop_is_enabled('LDX_tb.tb: undefined symbol: scsd_xprop_is_enabled')
+ANF: scsd_xprop_sig_is_promoted('LDX_tb.tb: undefined symbol: scsd_xprop_sig_is_promoted')
+ANF: scsd_xprop_int_xvalue('LDX_tb.tb: undefined symbol: scsd_xprop_int_xvalue')
+ANF: scsd_xprop_bool_xvalue('LDX_tb.tb: undefined symbol: scsd_xprop_bool_xvalue')
+ANF: scsd_xprop_enum_xvalue('LDX_tb.tb: undefined symbol: scsd_xprop_enum_xvalue')
+ANF: scsd_xprop_register_merge_mode_cb('LDX_tb.tb: undefined symbol: scsd_xprop_register_merge_mode_cb')
+ANF: scsd_xprop_delete_merge_mode_cb('LDX_tb.tb: undefined symbol: scsd_xprop_delete_merge_mode_cb')
+ANF: scsd_xprop_get_merge_mode('LDX_tb.tb: undefined symbol: scsd_xprop_get_merge_mode')
+ANF: scsd_thread_get_info('LDX_tb.tb: undefined symbol: scsd_thread_get_info')
+ANF: scsd_thread_vc_init('LDX_tb.tb: undefined symbol: scsd_thread_vc_init')
+ANF: scsd_master_set_delta_sync_cbk('LDX_tb.tb: undefined symbol: scsd_master_set_delta_sync_cbk')
+ANF: scsd_fgp_get_fsdb_cores('LDX_tb.tb: undefined symbol: scsd_fgp_get_fsdb_cores')
+ANF: msvEnableDumpingMode('LDX_tb.tb: undefined symbol: msvEnableDumpingMode')
+ANF: msvGetVersion('LDX_tb.tb: undefined symbol: msvGetVersion')
+ANF: msvGetInstProp('LDX_tb.tb: undefined symbol: msvGetInstProp')
+ANF: msvIsSpiceEngineReady('LDX_tb.tb: undefined symbol: msvIsSpiceEngineReady')
+ANF: msvSetAddProbeCallback('LDX_tb.tb: undefined symbol: msvSetAddProbeCallback')
+ANF: msvGetInstHandle('LDX_tb.tb: undefined symbol: msvGetInstHandle')
+ANF: msvGetProbeByInst('LDX_tb.tb: undefined symbol: msvGetProbeByInst')
+ANF: msvGetSigHandle('LDX_tb.tb: undefined symbol: msvGetSigHandle')
+ANF: msvGetProbeBySig('LDX_tb.tb: undefined symbol: msvGetProbeBySig')
+ANF: msvGetProbeInfo('LDX_tb.tb: undefined symbol: msvGetProbeInfo')
+ANF: msvRelease('LDX_tb.tb: undefined symbol: msvRelease')
+ANF: msvSetVcCallbackFunc('LDX_tb.tb: undefined symbol: msvSetVcCallbackFunc')
+ANF: msvCheckVcCallback('LDX_tb.tb: undefined symbol: msvCheckVcCallback')
+ANF: msvAddVcCallback('LDX_tb.tb: undefined symbol: msvAddVcCallback')
+ANF: msvRemoveVcCallback('LDX_tb.tb: undefined symbol: msvRemoveVcCallback')
+ANF: msvGetLatestValue('LDX_tb.tb: undefined symbol: msvGetLatestValue')
+ANF: msvSetEndofSimCallback('LDX_tb.tb: undefined symbol: msvSetEndofSimCallback')
+ANF: msvIgnoredProbe('LDX_tb.tb: undefined symbol: msvIgnoredProbe')
+ANF: msvGetThruNetInfo('LDX_tb.tb: undefined symbol: msvGetThruNetInfo')
+ANF: msvFreeThruNetInfo('LDX_tb.tb: undefined symbol: msvFreeThruNetInfo')
+ANF: PI_ace_get_output_time_unit('LDX_tb.tb: undefined symbol: PI_ace_get_output_time_unit')
+ANF: PI_ace_sim_sync('LDX_tb.tb: undefined symbol: PI_ace_sim_sync')
+ANF: msvGetRereadInitFile('LDX_tb.tb: undefined symbol: msvGetRereadInitFile')
+ANF: msvSetBeforeRereadCallback('LDX_tb.tb: undefined symbol: msvSetBeforeRereadCallback')
+ANF: msvSetAfterRereadCallback('LDX_tb.tb: undefined symbol: msvSetAfterRereadCallback')
+ANF: msvSetForceCallback('LDX_tb.tb: undefined symbol: msvSetForceCallback')
+ANF: msvSetReleaseCallback('LDX_tb.tb: undefined symbol: msvSetReleaseCallback')
+ANF: msvGetForceStatus('LDX_tb.tb: undefined symbol: msvGetForceStatus')
+ANF: vdi_fn_trigger_native_init_force('LDX_tb.tb: undefined symbol: vdi_fn_trigger_native_init_force')
+ANF: vdi_set_native_callback('LDX_tb.tb: undefined symbol: vdi_set_native_callback')
+ANF: vdi_fn_check_native_callback('LDX_tb.tb: undefined symbol: vdi_fn_check_native_callback')
+ANF: vdi_fn_add_native_callback('LDX_tb.tb: undefined symbol: vdi_fn_add_native_callback')
+ANF: vhdi_dt_get_type('LDX_tb.tb: undefined symbol: vhdi_dt_get_type')
+ANF: vhdi_dt_get_key('LDX_tb.tb: undefined symbol: vhdi_dt_get_key')
+ANF: vhdi_dt_get_vhdl_enum_info('LDX_tb.tb: undefined symbol: vhdi_dt_get_vhdl_enum_info')
+ANF: vhdi_dt_get_vhdl_physical_info('LDX_tb.tb: undefined symbol: vhdi_dt_get_vhdl_physical_info')
+ANF: vhdi_dt_get_vhdl_array_info('LDX_tb.tb: undefined symbol: vhdi_dt_get_vhdl_array_info')
+ANF: vhdi_dt_get_vhdl_record_info('LDX_tb.tb: undefined symbol: vhdi_dt_get_vhdl_record_info')
+ANF: vhdi_def_traverse_module('LDX_tb.tb: undefined symbol: vhdi_def_traverse_module')
+ANF: vhdi_def_traverse_scope('LDX_tb.tb: undefined symbol: vhdi_def_traverse_scope')
+ANF: vhdi_def_traverse_variable('LDX_tb.tb: undefined symbol: vhdi_def_traverse_variable')
+ANF: vhdi_def_get_module_id_by_vhpi('LDX_tb.tb: undefined symbol: vhdi_def_get_module_id_by_vhpi')
+ANF: vhdi_def_get_handle_by_module_id('LDX_tb.tb: undefined symbol: vhdi_def_get_handle_by_module_id')
+ANF: vhdi_def_get_variable_info_by_vhpi('LDX_tb.tb: undefined symbol: vhdi_def_get_variable_info_by_vhpi')
+ANF: vhdi_def_free('LDX_tb.tb: undefined symbol: vhdi_def_free')
+ANF: vhdi_ist_traverse_scope('LDX_tb.tb: undefined symbol: vhdi_ist_traverse_scope')
+ANF: vhdi_ist_traverse_variable('LDX_tb.tb: undefined symbol: vhdi_ist_traverse_variable')
+ANF: vhdi_ist_convert_by_vhpi('LDX_tb.tb: undefined symbol: vhdi_ist_convert_by_vhpi')
+ANF: vhdi_ist_clone('LDX_tb.tb: undefined symbol: vhdi_ist_clone')
+ANF: vhdi_ist_free('LDX_tb.tb: undefined symbol: vhdi_ist_free')
+ANF: vhdi_ist_hash_key('LDX_tb.tb: undefined symbol: vhdi_ist_hash_key')
+ANF: vhdi_ist_compare('LDX_tb.tb: undefined symbol: vhdi_ist_compare')
+ANF: vhdi_ist_get_value_addr('LDX_tb.tb: undefined symbol: vhdi_ist_get_value_addr')
+ANF: vhdi_set_scsd_callback('LDX_tb.tb: undefined symbol: vhdi_set_scsd_callback')
+ANF: vhdi_cbk_set_force_callback('LDX_tb.tb: undefined symbol: vhdi_cbk_set_force_callback')
+ANF: vhdi_trigger_init_force('LDX_tb.tb: undefined symbol: vhdi_trigger_init_force')
+ANF: vhdi_ist_check_scsd_callback('LDX_tb.tb: undefined symbol: vhdi_ist_check_scsd_callback')
+ANF: vhdi_ist_add_scsd_callback('LDX_tb.tb: undefined symbol: vhdi_ist_add_scsd_callback')
+ANF: vhdi_ist_remove_scsd_callback('LDX_tb.tb: undefined symbol: vhdi_ist_remove_scsd_callback')
+ANF: vhdi_ist_get_scsd_user_data('LDX_tb.tb: undefined symbol: vhdi_ist_get_scsd_user_data')
+ANF: vhdi_add_time_change_callback('LDX_tb.tb: undefined symbol: vhdi_add_time_change_callback')
+ANF: vhdi_get_real_value_by_value_addr('LDX_tb.tb: undefined symbol: vhdi_get_real_value_by_value_addr')
+ANF: vhdi_get_64_value_by_value_addr('LDX_tb.tb: undefined symbol: vhdi_get_64_value_by_value_addr')
+ANF: vhdi_xprop_inst_is_promoted('LDX_tb.tb: undefined symbol: vhdi_xprop_inst_is_promoted')
+ANF: vdi_ist_convert_by_vhdi('LDX_tb.tb: undefined symbol: vdi_ist_convert_by_vhdi')
+ANF: vhdi_ist_get_module_id('LDX_tb.tb: undefined symbol: vhdi_ist_get_module_id')
+ANF: vhdi_refine_foreign_scope_type('LDX_tb.tb: undefined symbol: vhdi_refine_foreign_scope_type')
+ANF: vhdi_flush_callback('LDX_tb.tb: undefined symbol: vhdi_flush_callback')
+ANF: vhdi_set_orig_name('LDX_tb.tb: undefined symbol: vhdi_set_orig_name')
+ANF: vhdi_set_dump_pt('LDX_tb.tb: undefined symbol: vhdi_set_dump_pt')
+ANF: vhdi_get_fsdb_option('LDX_tb.tb: undefined symbol: vhdi_get_fsdb_option')
+ANF: vhdi_fgp_get_mode('LDX_tb.tb: undefined symbol: vhdi_fgp_get_mode')
+ANF: vhdi_node_register_composite_var('LDX_tb.tb: undefined symbol: vhdi_node_register_composite_var')
+ANF: vhdi_node_analysis('LDX_tb.tb: undefined symbol: vhdi_node_analysis')
+ANF: vhdi_node_id('LDX_tb.tb: undefined symbol: vhdi_node_id')
+ANF: vhdi_node_ist_check_scsd_callback('LDX_tb.tb: undefined symbol: vhdi_node_ist_check_scsd_callback')
+ANF: vhdi_node_ist_add_scsd_callback('LDX_tb.tb: undefined symbol: vhdi_node_ist_add_scsd_callback')
+ANF: vhdi_node_ist_get_value_addr('LDX_tb.tb: undefined symbol: vhdi_node_ist_get_value_addr')
+VCS compile option:
+ option[0]: LDX_tb.tb
+ option[1]: +lint=all,noVCDE,noNS,noSVA-UA
+ option[2]: +define+FSDB
+ option[3]: -a
+ option[4]: run.log
+ option[5]: /home/synopsys/vcs-mx/O-2018.09-1/linux64/bin/vcs1
+ option[6]: -Mcc=gcc
+ option[7]: -Mcplusplus=g++
+ option[8]: -Masflags=
+ option[9]: -Mcfl= -pipe -fPIC -O -I/home/synopsys/vcs-mx/O-2018.09-1/include 
+ option[10]: -Mxcflags= -pipe -fPIC -I/home/synopsys/vcs-mx/O-2018.09-1/include
+ option[11]: -Mldflags= -rdynamic 
+ option[12]: -Mout=LDX_tb.tb
+ option[13]: -Mamsrun=
+ option[14]: -Mvcsaceobjs=
+ option[15]: -Mobjects= /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/libvirsim.so /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/liberrorinf.so /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/libsnpsmalloc.so /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/libvfs.so 
+ option[16]: -Mexternalobj=
+ option[17]: -Msaverestoreobj=/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_save_restore_new.o
+ option[18]: -Mcrt0=
+ option[19]: -Mcrtn=
+ option[20]: -Mcsrc=
+ option[21]: -Msyslibs=/home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/pli.a -ldl 
+ option[22]: -l
+ option[23]: run.log
+ option[24]: -Xvcs_run_simv=1
+ option[25]: -full64
+ option[26]: -Xnotice=1
+ option[27]: -line
+ option[28]: +lint=all,noVCDE,noNS,noSVA-UA
+ option[29]: -timescale=1ns/10ps
+ option[30]: -debug_access+all+bc
+ option[31]: +vpi
+ option[32]: +vcsd
+ option[33]: +memcbk
+ option[34]: +itf+/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcsdp.tab
+ option[35]: -debug_region+cell
+ option[36]: +define+FSDB
+ option[37]: -debug_access
+ option[38]: -o
+ option[39]: LDX_tb.tb
+ option[40]: -top
+ option[41]: LDX_tb
+ option[42]: -picarchive
+ option[43]: -P
+ option[44]: /home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/verdi.tab
+ option[45]: -fsdb
+ option[46]: -sverilog
+ option[47]: -gen_obj
+ option[48]: /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/WB/sim/LDX_tb.v
+ option[49]: /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/WB/LDX.v
+ option[50]: -load
+ option[51]: /home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/libnovas.so:FSDBDumpCmd
+ option[52]: timescale=1ns/10ps
+Chronologic Simulation VCS Release O-2018.09-1_Full64
+Linux 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 15:41:52 UTC 2023 x86_64
+CPU cores: 6
+Limit information:
+======================================
+cputime		unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		8192 kbytes
+coredumpsize		0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked		64 kbytes
+maxproc		4096
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+XDG_VTNR=1
+LC_PAPER=zh_CN.UTF-8
+SSH_AGENT_PID=10562
+XDG_SESSION_ID=1
+HOSTNAME=IC_EDA
+LC_MONETARY=zh_CN.UTF-8
+DBUS_STARTER_ADDRESS=unix:abstract=/tmp/dbus-KBzDI4h9cx,guid=2a92a114673618dd2a3850de64586de8
+UNAME=/bin/uname
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+SCRNAME=vcs
+VCS_DEPTH=0
+HARDWARE_PLATFORM=x86_64
+SHELL=/bin/bash
+VTE_VERSION=5204
+XDG_MENU_PREFIX=gnome-
+TERM=xterm-256color
+HOST=IC_EDA
+MAKEFLAGS=
+QUESTASIM_HOME=/home/mentor/questasim
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/0974fcc5_0eee_4c88_98fd_6258fc3d3b6c
+LC_NUMERIC=zh_CN.UTF-8
+VCS_LOG_FILE=run.log
+QTDIR=/usr/lib/qt-3.3
+QTINC=/usr/lib/qt-3.3/include
+LC_ALL=C
+QT_GRAPHICSSYSTEM_CHECKED=1
+IMSETTINGS_MODULE=none
+USER=ICer
+GROUP=ICer
+LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+LD_LIBRARY_PATH=/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib::/home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/lib/LINUX64:/home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/IUS/LINUX64/boot:/home/cadence/INCISIVE152/tools.lnx86/lib
+PRJ_ROOT=/home/ICer/Project/Verisilicon/VSI_SOC_RELEASE_r1p4/Smart_Audio_SoC
+GNOME_TERMINAL_SERVICE=:1.1181
+SCRIPT_NAME=vcs
+MAKE_TERMOUT=/dev/pts/1
+VCS_MX_HOME_INTERNAL=1
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+HOSTTYPE=x86_64-linux
+DVE_HOME=/home/synopsys/vcs-mx/O-2018.09-1
+SNPSLMD_LICENSE_FILE=27000@IC_EDA
+USERNAME=ICer
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/10574,unix/unix:/tmp/.ICE-unix/10574
+MAKELEVEL=1
+PRJ_DESIGN=/home/ICer/Project/Verisilicon/VSI_SOC_RELEASE_r1p4/Smart_Audio_SoC/design
+OVA_UUM=0
+MFLAGS=
+MMSIMHOME=/home/cadence/MMSIM151
+VCS_MODE_FLAG=64
+GNOME_SHELL_SESSION_MODE=classic
+DESKTOP_SESSION=gnome-classic
+PATH=.:/home/Xilinx/SDK/2019.1/bin:/home/Xilinx/SDK/2019.1/gnu/microblaze/lin/bin:/home/Xilinx/SDK/2019.1/gnu/arm/lin/bin:/home/Xilinx/SDK/2019.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/home/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/home/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/home/Xilinx/SDK/2019.1/gnu/aarch64/lin/aarch64-linux/bin:/home/Xilinx/SDK/2019.1/gnu/aarch64/lin/aarch64-none/bin:/home/Xilinx/SDK/2019.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/home/Xilinx/SDK/2019.1/tps/lnx64/cmake-3.3.2/bin:/home/Xilinx/Vivado/2019.1/bin:/home/Xilinx/DocNav:/home/ICer/Project/Verisilicon/VSI_SOC_RELEASE_r1p2/ZView/cmdtools/bin:/home/ICer/Project/Verisilicon/VSI_SOC_RELEASE_r1p2/ZView/ide:/home/synopsys/verdi/Verdi_O-2018.09-SP2/bin:/home/synopsys/vcs/O-2018.09-SP2/bin:/home/ICer/Project/Verisilicon/VSI_SOC_RELEASE_r1p2/ZView/cmdtools/bin:/home/ICer/Project/Verisilicon/VSI_SOC_RELEASE_r1p2/ZView/ide:/home/synopsys/verdi/Verdi_O-2018.09-SP2/bin:/home/synopsys/vcs/O-2018.09-SP2/bin:/usr/lib/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/synopsys/fpga/N-2018.03-SP1/bin:/home/synopsys/pts/O-2018.06-SP1/bin:/home/synopsys/icc2/O-2018.06-SP1/bin:/home/synopsys/syn/O-2018.06-SP1/bin:/home/synopsys/lc/O-2018.06-SP1/bin:/home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME//bin:/home/synopsys/vcs-mx/O-2018.09-1/gui/dve/bin:/home/synopsys/vcs-mx/O-2018.09-1/bin:/home/synopsys/verdi/Verdi_O-2018.09-SP2/bin:/home/synopsys/scl/2018.06/linux64/bin::/home/cadence/IC617/tools/dfII/bin:/home/cadence/IC617/tools/plot/bin:/home/cadence/INCISIVE152/tools/bin:/home/cadence/MMSIM151/bin:/home/cadence/MMSIM151/tools/relxpert/bin:/home/cadence/INCISIVE152/bin:/home/cadence/INCISIVE152/tools.lnx86/bin:/home/cadence/INCISIVE152/tools.lnx86/dfII/bin:/home/mentor/questasim/linux_x86_64:/home/Riscv_Tools/bin:/home/Riscv_Tools/riscv-gnu-toolchain/qemu-6.0.0/build/riscv32-linux-user
+MAIL=/var/spool/mail/ICer
+PT_HOME=/home/synopsys/pts/O-2018.06-SP1
+QT_IM_MODULE=ibus
+CALIBRE_HOME=/home/mentor//Calibre2015/aoi_cal_2015.2_36.27
+VERDI_HOME=/home/synopsys/verdi/Verdi_O-2018.09-SP2
+PRJ_SIM=/home/ICer/Project/Verisilicon/VSI_SOC_RELEASE_r1p4/Smart_Audio_SoC/sim
+XDG_SESSION_TYPE=x11
+MGC_CALIBRE_LAYOUT_SERVER=IC_EDA:9189
+PWD=/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/WB/sim
+XMODIFIERS=@im=ibus
+ZSP_HOME_G5=/home/ICer/Project/Verisilicon/VSI_SOC_RELEASE_r1p2/ZView
+VCS_HOME=/home/synopsys/vcs-mx/O-2018.09-1
+MGC_CALIBRE_SCHEMATIC_SERVER=IC_EDA:9199
+LANG=zh_CN.UTF-8
+GDM_LANG=zh_CN.UTF-8
+SDSP_HOME=/home/ICer/Project/Verisilicon/VSI_SOC_RELEASE_r1p2/ZView/cmdtools
+KDEDIRS=/usr
+VCS_ARCH_OVERRIDE=linux
+LC_MEASUREMENT=zh_CN.UTF-8
+VMR_MODE_FLAG=64
+CDSHOME=/home/cadence/IC617
+GDMSESSION=gnome-classic
+XILINX_VIVADO=/home/Xilinx/Vivado/2019.1
+QEMU_HOME=/home/Riscv_Tools/riscv-gnu-toolchain/qemu-6.0.0
+SPECMAN_HOME=/home/cadence/INCISIVE152/components/sn
+VCS_ARG_ADDED_FOR_TMP=1
+SNPS_VCS_TMPDIR=/tmp/vcs_20230715144927_54309
+DBUS_STARTER_BUS_TYPE=session
+HOME=/home/ICer
+XDG_SEAT=seat0
+RISCV=/home/Riscv_Tools
+SHLVL=5
+OSTYPE=linux
+MGC_HOME=/home/mentor/
+ICC2_HOME=/home/synopsys/icc2/O-2018.06-SP1
+VERISILICON_LICENSE_PATH=6200@8.218.179.230
+MGC_LICENSE_FILE=/home/mentor//license/license.dat
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+NOVAS_LICENSE_QUEUE=1
+CADHOME=/home/cadence
+VCS_COM=/home/synopsys/vcs-mx/O-2018.09-1/linux64/bin/vcs1
+VENDOR=unknown
+MACHTYPE=x86_64
+XDG_SESSION_DESKTOP=gnome-classic
+LOGNAME=ICer
+DC_HOME=/home/synopsys/syn/O-2018.06-SP1
+MGLS_LICENSE_FILE=/home/mentor/questasim/mentor.dat
+QTLIB=/usr/lib/qt-3.3/lib
+SPYGLASS_HOME=/home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/
+MAKE_TERMERR=/dev/pts/1
+XDG_DATA_DIRS=/home/ICer/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-KBzDI4h9cx,guid=2a92a114673618dd2a3850de64586de8
+CDS_LIC_FILE=/home/cadence/license/cadence.dat
+SPECMAN_DIR=/home/cadence/INCISIVE152/components/sn/
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+SCL_HOME=/home/synopsys/scl/2018.06
+sysc_uni_pwd=/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/WB/sim
+WINDOWPATH=1
+XDG_RUNTIME_DIR=/run/user/1000
+SYNPLIFY_HOME=/home/synopsys/fpga/N-2018.03-SP1
+DISPLAY=:0
+VCS_ARCH=linux64
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+LC_HOME=/home/synopsys/lc/O-2018.06-SP1
+TOOL_HOME=/home/synopsys/vcs-mx/O-2018.09-1/linux64
+XDG_CURRENT_DESKTOP=GNOME-Classic:GNOME
+INCISIVE_HOME=/home/cadence/INCISIVE152
+LC_TIME=zh_CN.UTF-8
+XAUTHORITY=/home/ICer/.xauthobeIY6
+COLORTERM=truecolor
+_=./LDX_tb.tb
+OLDPWD=/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/WB/sim/LDX_tb.tb.daidir/debug_dump/fsearch
+VCS_HEAP_EXEC=true
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_EXEC_DONE=1
+DVE=/home/synopsys/vcs-mx/O-2018.09-1/gui/dve
+SPECMAN_OUTPUT_TO_TTY=1
+Runtime command line arguments:
+argv[0]=LDX_tb.tb
+argv[1]=+lint=all,noVCDE,noNS,noSVA-UA
+argv[2]=+define+FSDB
+argv[3]=-a
+argv[4]=run.log
+318 profile - 100
+          CPU/Mem usage: 0.060 sys,  0.220 user,  245.38M mem
+319 Sat Jul 15 22:49:28 2023
+320 pliAppInit
+321 FSDB_GATE is set.
+322 FSDB_RTL is set.
+323 Enable Parallel Dumping.
+324 pliAppMiscSet: New Sim Round
+325 pliEntryInit
+326 LIBSSCORE=found /home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/lib/LINUXAMD64/libsscore_vcs201809.so through $NOVAS_HOME setting.
+327 FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
+328 (C) 1996 - 2019 by Synopsys, Inc.
+329 FSDB_VCS_ENABLE_FAST_VC is enable
+330 sps_call_fsdbDumpvars_vd_main at 0 : /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/WB/sim/LDX_tb.v(94)
+331 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+332 *Verdi* : Create FSDB file 'novas.fsdb'
+333 compile option from '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/WB/sim/LDX_tb.tb.daidir/vcs_rebuild'.
+334   "vcs '-full64' '-notice' '-line' '+lint=all,noVCDE,noNS,noSVA-UA' '-sverilog' '-timescale=1ns/10ps' '-debug_all' '-R' '+define+FSDB' '-debug_access' '-o' 'LDX_tb.tb' '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/WB/sim/LDX_tb.v' '/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/WB/LDX.v' '-top' 'LDX_tb' '-l' 'run.log' 2>&1"
+335 [spi_vcs_vd_ppi_create_root]: no upf option
+336 FSDB dumper cannot dump UPF related power signal ($power_tree): no ppiPowerNetwork.
+337 *Verdi* : Begin traversing the scopes, layer (0).
+338 *Verdi* : End of traversing.
+339 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.100 sys,  0.240 user,  340.50M mem
+                   incr: 0.010 sys,  0.010 user,  7.57M mem
+                   accu: 0.010 sys,  0.010 user,  7.57M mem
+              accu incr: 0.010 sys,  0.010 user,  7.57M mem
+
+          Count usage: 8 var,  8 idcode,  4 callback
+                 incr: 8 var,  8 idcode,  4 callback
+                 accu: 8 var,  8 idcode,  4 callback
+            accu incr: 8 var,  8 idcode,  4 callback
+340 Sat Jul 15 22:49:28 2023
+341 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.100 sys,  0.240 user,  341.55M mem
+                   incr: 0.000 sys,  0.000 user,  1.05M mem
+                   accu: 0.010 sys,  0.010 user,  8.62M mem
+              accu incr: 0.000 sys,  0.000 user,  1.05M mem
+
+          Count usage: 8 var,  8 idcode,  4 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 8 var,  8 idcode,  4 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+342 Sat Jul 15 22:49:28 2023
+343 sps_call_fsdbDumpMDA_vd_main at 0 : /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/WB/sim/LDX_tb.v(95)
+344 *Verdi* : Begin traversing the MDAs, layer (0).
+345 *Verdi* : Enable +mda and +packedmda dumping.
+346 *Verdi* : End of traversing the MDAs.
+347 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.100 sys,  0.240 user,  341.55M mem
+                   incr: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.000 sys,  0.000 user,  0.00M mem
+              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+
+          Count usage: 8 var,  8 idcode,  4 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 0 var,  0 idcode,  0 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+348 Sat Jul 15 22:49:28 2023
+349 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.100 sys,  0.240 user,  341.55M mem
+                   incr: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.000 sys,  0.000 user,  0.00M mem
+              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+
+          Count usage: 8 var,  8 idcode,  4 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 0 var,  0 idcode,  0 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+350 Sat Jul 15 22:49:28 2023
+351 End of simulation at 1000000
+352 Sat Jul 15 22:49:28 2023
+353 Begin FSDB profile info:
+354 FSDB Writer : bc1(0) bcn(96) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.008840) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+355 End FSDB profile info
+356 Parallel profile    -  Flush:3 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:0
+357                        ProduceTime:0.362973193 ConsumerTime:0.000000000 Buffer:64MB
+358 SimExit
+359 Sim process exit

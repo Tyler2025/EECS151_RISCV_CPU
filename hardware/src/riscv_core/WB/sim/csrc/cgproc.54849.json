@@ -1,0 +1,244 @@
+{
+    "Modules": {
+        "...MASTER...": {
+            "nQuads": 0,
+            "start_perf": [
+                0.19168686866760254,
+                0.182034,
+                0.102116,
+                270156,
+                283268,
+                1689432567.904568,
+                2960798172427592
+            ],
+            "child_modules": {
+                "std": 1,
+                "LDX_tb": 1
+            },
+            "nRouts": 5,
+            "significant_routs": [
+                [
+                    1,
+                    "SIM",
+                    5873601,
+                    242,
+                    0
+                ]
+            ],
+            "end_perf": [
+                0.20447301864624023,
+                0.19020500000000001,
+                0.104557,
+                272556,
+                283268,
+                2960798222573506,
+                0,
+                0
+            ],
+            "nMops": 0
+        },
+        "std": {
+            "start_perf": [
+                0.20461583137512207,
+                0.190306,
+                0.104612,
+                272556,
+                283268,
+                1689432567.9174969,
+                2960798223084692
+            ],
+            "nQuads": 218,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 3,
+            "significant_routs": [
+                [
+                    1,
+                    "T_VCSgd_reYIK_1_0",
+                    3093756,
+                    138,
+                    13
+                ],
+                [
+                    7,
+                    "F_VCSgd_reYIK_7_0",
+                    3053077,
+                    462,
+                    25
+                ],
+                [
+                    8,
+                    "F_VCSgd_reYIK_8_0",
+                    3200674,
+                    169,
+                    15
+                ],
+                [
+                    24,
+                    "F_VCSgd_reYIK_24_0",
+                    3480746,
+                    984,
+                    90
+                ]
+            ],
+            "end_perf": [
+                0.21761488914489746,
+                0.20006699999999999,
+                0.10892499999999999,
+                276772,
+                283268,
+                2960798274033384,
+                8589934594,
+                0
+            ],
+            "nMops": 528,
+            "svclass": [
+                "$vcs_nba_dyn_obj",
+                576,
+                35,
+                2,
+                2,
+                0,
+                "sigprop$$",
+                576,
+                35,
+                2,
+                2,
+                0,
+                "process",
+                2380,
+                200,
+                8,
+                8,
+                0,
+                "event",
+                597,
+                34,
+                2,
+                2,
+                0,
+                "mailbox",
+                1769,
+                140,
+                9,
+                9,
+                0,
+                "semaphore",
+                1119,
+                84,
+                5,
+                5,
+                0
+            ],
+            "nRouts": 33
+        },
+        "LDX_tb": {
+            "start_perf": [
+                0.21767401695251465,
+                0.20010900000000001,
+                0.108948,
+                276772,
+                283268,
+                1689432567.9305551,
+                2960798274205819
+            ],
+            "nQuads": 671,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 3,
+            "significant_routs": [
+                [
+                    62,
+                    "R_VCSgd_jd9Q7_3e",
+                    6498182,
+                    4179,
+                    543
+                ]
+            ],
+            "end_perf": [
+                0.22863984107971191,
+                0.21199599999999999,
+                0.108948,
+                277312,
+                283268,
+                2960798317229687,
+                12884901889,
+                0
+            ],
+            "nMops": 1304,
+            "nRouts": 74
+        }
+    },
+    "CompUnits": {
+        "reYIK_d": {
+            "mod": "std",
+            "out": "reYIK_d.o",
+            "archive": "archive.2/_54849_archive_1.a",
+            "bytes": 43078,
+            "text": 7325,
+            "mode": 4,
+            "cls": 7017,
+            "checksum": 0
+        },
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7896,
+            "text": 434,
+            "mode": 4,
+            "checksum": 0
+        },
+        "jd9Q7_d": {
+            "mod": "LDX_tb",
+            "out": "jd9Q7_d.o",
+            "archive": "archive.2/_54849_archive_1.a",
+            "bytes": 30046,
+            "text": 14405,
+            "mode": 4,
+            "checksum": 0
+        }
+    },
+    "reusePaths": {},
+    "stat": {
+        "ru_childs_end": {
+            "ru_nvcsw": 18,
+            "ru_utime_sec": 0.011358999999999999,
+            "ru_stime_sec": 0.035818000000000003,
+            "ru_nivcsw": 7,
+            "ru_maxrss_kb": 18020,
+            "ru_minflt": 6406,
+            "ru_majflt": 0
+        },
+        "ru_self_end": {
+            "ru_nvcsw": 22,
+            "ru_utime_sec": 0.21732099999999999,
+            "ru_stime_sec": 0.115313,
+            "ru_nivcsw": 16,
+            "ru_maxrss_kb": 75428,
+            "ru_minflt": 29038,
+            "ru_majflt": 0
+        },
+        "cpu_cycles_end": 2960798359379139,
+        "peak_mem_kb": 283268
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.2/_54849_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    43078
+                ],
+                [
+                    "jd9Q7_d.o",
+                    30046
+                ],
+                [
+                    "amcQwB.o",
+                    115610
+                ]
+            ],
+            "size": 188734
+        }
+    ]
+}

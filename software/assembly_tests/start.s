@@ -25,5 +25,14 @@ branch1: li x1, 500	# x1 now contains 500
 li x20, 2		        # Set the flag register
 			              # Now we check that x1 contains 500 and x2 contains 100
 
+# Test CSRWI
+csrwi 0x51e,23
+li x20,1
+
+# Test CSR
+li x2, -19
+csrw 0x51e,x2
+li x20,2
+
 Done: j Done
 

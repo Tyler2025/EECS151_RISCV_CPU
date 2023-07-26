@@ -1,0 +1,93 @@
+@verdi rc file Version 1.0
+[General]
+saveDB = TRUE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 
+VerdiVersion = Verdi_O-2018.09-SP2
+[KeyNote]
+Line1 = Automatic Backup 0
+Line2 = Save Open Database Information: Yes
+Line3 = Path Option: Absolute Paths
+Line4 = Windows Option: All Windows
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+Console = FALSE
+powerDumped = 0
+[hb]
+postSimFile = /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/novas.fsdb
+syncTime = 63519.29
+viewport = 0 27 1918 775 0 0 265 1916
+activeNode = "Data_align_tb.U_DATA_ALIGN_0"
+activeScope = "Data_align_tb.U_DATA_ALIGN_0"
+activeFile = "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Data_align.v"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 0
+baMode = False
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = False
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+powerAwareAnnot = True
+amsAnnot = True
+traceCrossHier = True
+DnDtraceCrossHierOnly = True
+traceIncTopPort = False
+leadingZero = False
+signalPane = False
+Scope1 = "Data_align_tb.U_DATA_ALIGN_0"
+Scope2 = "Data_align_tb"
+Scope3 = "ALU_tb"
+multipleSelection = 1 0 2 0 0
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-2001" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/ALU_tb.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Branch_Comp_tb.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/si\
+m/PCSrc_tb.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Stall_tb.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Forwarding_tb.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core\
+/EXM/sim/Uart_if_tb.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Cycle_Counters_tb.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/Inst_Counters_tb.v" "/home/ICer/Project/project_skeleton_sp22/ha\
+rdware/src/riscv_core/EXM/sim/CSR_tb.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/exm_wb_regs_tb.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/WEN_align_tb.v" "/home/ICer/Project/project_skelet\
+on_sp22/hardware/src/riscv_core/EXM/sim/Data_align_tb.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/ALU.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Data_align.v" "/home/ICer/Project/project_skeleton_s\
+p22/hardware/src/riscv_core/EXM/Branch_comp.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/PCSrc.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Stall.v" "/home/ICer/Project/project_skeleton_sp22/hardware/\
+src/riscv_core/EXM/Cycle_Counters.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Inst_Counters.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/CSR.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/\
+riscv_core/EXM/exm_wb_regs.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Forwarding.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/WEN_align.v" "/home/ICer/Project/project_skeleton_sp22/hardware/src/risc\
+v_core/EXM/Uart_if.v" "sim/ALU_tb.v" "sim/Branch_Comp_tb.v" "sim/CSR_tb.v" "sim/Cycle_Counters_tb.v" "sim/Data_align_tb.v" "sim/exm_wb_regs_tb.v" "sim/Forwarding_tb.v" "sim/Inst_Counters_tb.v" "sim/PCSrc_tb.v" "sim/Stall_tb.v" "sim/Uart_if_tb.v" "sim/WEN_a\
+lign_tb.v" 
+invokeDir = /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM
+[hb.sourceTab.1]
+scope = Data_align_tb.U_DATA_ALIGN_0
+File = /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Data_align.v
+Line = 1
+[nMemoryManager]
+WaveformFile = /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/sim/novas.fsdb
+UserActionNum = 0
+nMemWindowNum = 0
+[wave.0]
+viewPort = 0 27 1918 293 128 131
+primaryWindow = TRUE
+SessionFile = /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/verdiLog/novas_autosave.ses.wave.0
+displayGrid = FALSE
+hierarchicalName = FALSE
+snap = TRUE
+displayLeadingZeros = FALSE
+fixDelta = FALSE
+displayCursorMarker = FALSE
+autoUpdate = FALSE
+highlightGlitchs = FALSE
+waveformSyncCursorMarker = FALSE
+waveformSyncHorizontalRange = FALSE
+waveformSyncVerticalscroll = FALSE
+displayErrors = TRUE
+displayMsgSymbols = TRUE
+showMsgDescriptions = TRUE
+autoFit = FALSE
+displayDeltaY = FALSE
+centerCursor = FALSE

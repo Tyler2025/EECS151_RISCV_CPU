@@ -1,0 +1,15 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -2001
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/WB/sim/LDX_tb.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/WB/LDX.v
+    sim/LDX_tb.v
+
+
+*Error* Module LDX_tb redefined
+"sim/LDX_tb.v", 16: 
+Highest level modules:
+LDX_tb
+
+Total	1 error(s),   0 warning(s)

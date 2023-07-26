@@ -1,0 +1,47 @@
+[*]
+[*] GTKWave Analyzer v3.3.61 (w)1999-2014 BSI
+[*] Thu Jul 20 07:56:42 2023
+[*]
+[dumpfile] "/home/ICer/Project/project_skeleton_sp22/hardware/Riscv151_testbench.vcd"
+[dumpfile_mtime] "Wed Jul 19 15:59:49 2023"
+[dumpfile_size] 30331
+[savefile] "/home/ICer/Project/project_skeleton_sp22/hardware/Riscv151_testbench.gtkw"
+[timestart] 0
+[size] 1918 775
+[pos] -39 -39
+*-5.917960 13 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] Riscv151_testbench.
+[treeopen] Riscv151_testbench.CPU.
+[sst_width] 229
+[signals_width] 204
+[sst_expanded] 1
+[sst_vpaned_height] 314
+@28
+Riscv151_testbench.clk
+Riscv151_testbench.rst
+@22
+Riscv151_testbench.CPU.EXM_inst[31:0]
+Riscv151_testbench.CPU.Branch_Comp_u1.A[31:0]
+Riscv151_testbench.CPU.Branch_Comp_u1.B[31:0]
+@28
+Riscv151_testbench.CPU.Branch_Comp_u1.BrEq
+Riscv151_testbench.CPU.Branch_Comp_u1.BrLt
+Riscv151_testbench.CPU.Branch_Comp_u1.BrUn
+Riscv151_testbench.CPU.PCSrc_u1.src[1:0]
+Riscv151_testbench.CPU.pc_reg_u1.pcsrc[1:0]
+@22
+Riscv151_testbench.CPU.pc_reg_u1.next_pc[31:0]
+Riscv151_testbench.CPU.pc_reg_u1.pc[31:0]
+Riscv151_testbench.CPU.alu[31:0]
+@23
+Riscv151_testbench.CPU.ALUrs1[31:0]
+@22
+Riscv151_testbench.CPU.ALUrs2[31:0]
+@28
+Riscv151_testbench.CPU.alurs1src
+Riscv151_testbench.CPU.alurs2src
+@22
+Riscv151_testbench.CPU.mrs1[31:0]
+Riscv151_testbench.CPU.mrs2[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

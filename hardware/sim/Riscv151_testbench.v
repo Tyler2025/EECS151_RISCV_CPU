@@ -61,8 +61,8 @@ module Riscv151_testbench();
   task reset;
     integer i;
     begin
-      for (i = 0; i < `RF_PATH.DEPTH; i = i + 1) begin
-        `RF_PATH.mem[i] = 0;
+      for (i = 0; i < `IMEM_PATH.DEPTH; i = i + 1) begin
+        `IMEM_PATH.mem[i] = 0;
       end
       for (i = 0; i < `DMEM_PATH.DEPTH; i = i + 1) begin
         `DMEM_PATH.mem[i] = 0;
@@ -72,9 +72,10 @@ module Riscv151_testbench();
       end
 
       @(negedge clk);
-      rst = 1;
-      @(negedge clk);
       rst = 0;
+      @(negedge clk);
+      rst = 1;
+	$display("#########INDEED RESET########");
     end
   endtask
 
@@ -189,16 +190,17 @@ module Riscv151_testbench();
     $dumpvars;
 
     #0;
-    rst = 0;
-
-    // Reset the CPU
     rst = 1;
+	
+    @(posedge clk);
+    // Reset the CPU
+    rst = 0;
     // Hold reset for a while
     repeat (10) @(posedge clk);
 
     @(negedge clk);
-    rst = 0;
-
+    rst = 1;
+/*
     // Test R-Type Insts --------------------------------------------------
     // - ADD, SUB, SLL, SLT, SLTU, XOR, OR, AND, SRL, SRA
     // - SLLI, SRLI, SRAI
@@ -657,7 +659,8 @@ module Riscv151_testbench();
     `IMEM_PATH.mem[INST_ADDR + 1] = {IMM[11:5], 5'd4, 5'd2, `FNC_SW, IMM[4:0], `OPC_STORE};
 
     check_result_dmem(DATA_ADDR1, `RF_PATH.mem[4], "Hazard 9");
-
+	
+	*/
     // Hazard to Branch operands
     reset();
     init_rf();

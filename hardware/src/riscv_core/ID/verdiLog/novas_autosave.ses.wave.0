@@ -1,0 +1,83 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1918 670 193 84
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/novas.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 101000.000000
+cursor 5000.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 4
+; marker line index
+markerPos 29
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "U_ID_EXM_REGS_0"
+activeDirFile "" "/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/novas.fsdb"
+addSignal -h 15 /id_exm_regs_tb/U_ID_EXM_REGS_0/clk
+addSignal -h 15 -holdScope pc[31:0]
+addSignal -h 15 -holdScope rs1[31:0]
+addSignal -h 15 -holdScope rs2[31:0]
+addSignal -h 15 -holdScope imm[31:0]
+addSignal -h 15 -holdScope BrUn
+addSignal -h 15 -holdScope BSel
+addSignal -h 15 -holdScope ASel
+addSignal -h 15 -holdScope ALUSel[3:0]
+addSignal -h 15 -holdScope MEMWen[3:0]
+addSignal -h 15 -holdScope CSRSrc
+addSignal -h 15 -holdScope LDSel[2:0]
+addSignal -h 15 -holdScope WBSel[1:0]
+addSignal -h 15 -holdScope RegWen
+addSignal -h 15 -holdScope Inst[31:0]
+addSignal -h 15 -holdScope pc_o[31:0]
+addSignal -h 15 -holdScope rs1_o[31:0]
+addSignal -h 15 -holdScope rs2_o[31:0]
+addSignal -h 15 -holdScope imm_o[31:0]
+addSignal -h 15 -holdScope BrUn_o
+addSignal -h 15 -holdScope BSel_o
+addSignal -h 15 -holdScope ASel_o
+addSignal -h 15 -holdScope ALUSel_o[3:0]
+addSignal -h 15 -holdScope MEMWen_o[3:0]
+addSignal -h 15 -holdScope CSRSrc_o
+addSignal -h 15 -holdScope LDSel_o[2:0]
+addSignal -h 15 -holdScope WBSel_o[1:0]
+addSignal -h 15 -holdScope RegWen_o
+addSignal -h 15 -holdScope Inst_o[31:0]
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+

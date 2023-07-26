@@ -1,0 +1,35 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -2001
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/immgen_tb.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/control_tb.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/id_exm_regs_tb.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/immgen.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/control.v
+    /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/id_exm_regs.v
+    sim/control_tb.v
+    sim/id_exm_regs_tb.v
+    sim/immgen_tb.v
+
+
+*Warning* too many digits in hexadecimal
+"/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/id_exm_regs_tb.v", 64: 
+
+*Error* Module control_tb redefined
+"sim/control_tb.v", 16: 
+
+*Error* Module id_exm_regs_tb redefined
+"sim/id_exm_regs_tb.v", 16: 
+
+*Warning* too many digits in hexadecimal
+"sim/id_exm_regs_tb.v", 64: 
+
+*Error* Module immgen_tb redefined
+"sim/immgen_tb.v", 16: 
+Highest level modules:
+control_tb
+id_exm_regs_tb
+immgen_tb
+
+Total	3 error(s),   2 warning(s)

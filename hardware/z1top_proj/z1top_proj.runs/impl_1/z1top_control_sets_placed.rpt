@@ -1,0 +1,91 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Mon Jul 24 16:58:28 2023
+| Host         : IC_EDA running 64-bit CentOS Linux release 7.9.2009 (Core)
+| Command      : report_control_sets -verbose -file z1top_control_sets_placed.rpt
+| Design       : z1top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    13 |
+|    Minimum number of control sets                        |    13 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    46 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    13 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             231 |          107 |
+| No           | No                    | Yes                    |              76 |           35 |
+| No           | Yes                   | No                     |              43 |           18 |
+| Yes          | No                    | No                     |               9 |            3 |
+| Yes          | No                    | Yes                    |              53 |           14 |
+| Yes          | Yes                   | No                     |              22 |            7 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------+--------------------------------------------------+-----------------------------------------+------------------+----------------+
+|        Clock Signal        |                   Enable Signal                  |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
++----------------------------+--------------------------------------------------+-----------------------------------------+------------------+----------------+
+|  CLK_125MHZ_FPGA_IBUF_BUFG | cpu/uart_rx/clock_counter/q_reg[8]_0[0]          | cpu/uart_rx/bit_counter/q[3]_i_1__0_n_0 |                2 |              4 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG | cpu/id_exm_regs_u1/E[0]                          | bp/p_0_in                               |                2 |              5 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG | cpu/id_exm_regs_u1/MEMWen_o_reg[2]_0[0]          | bp/p_0_in                               |                1 |              6 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG | cpu/uart_rx/start_reg/q_reg[0]_0[0]              | cpu/uart_rx/bit_counter/SR[0]           |                2 |              9 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG | cpu/uart_rx/clock_counter/E[0]                   |                                         |                3 |              9 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG | bp/debouncer[0].saturating_counter[0][8]_i_1_n_0 | bp/s1/SR[0]                             |                3 |              9 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG | cpu/id_exm_regs_u1/data_in_ready_reg[0]          | bp/p_0_in                               |                3 |             10 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG |                                                  | bp/wrapping_counter[14]_i_1_n_0         |                4 |             14 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG |                                                  | cpu/PCSrc_u1/rst_n_align_reg_0          |               14 |             29 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG | cpu/id_exm_regs_u1/Inst_o_reg[0]_0               | bp/p_0_in                               |                8 |             32 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG |                                                  | bp/p_0_in                               |               35 |             76 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG | cpu/rf/p_0_in__0                                 |                                         |               12 |             96 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG |                                                  |                                         |              107 |            231 |
++----------------------------+--------------------------------------------------+-----------------------------------------+------------------+----------------+
+
+

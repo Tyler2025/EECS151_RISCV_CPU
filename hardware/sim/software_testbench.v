@@ -49,13 +49,13 @@ module software_testbench();
     $readmemh(MIF_FILE, `IMEM_PATH.mem);
     $readmemh(MIF_FILE, `DMEM_PATH.mem);
 
-    rst = 1;
+    rst = 0;
 
     // Hold reset for a while
     repeat (10) @(posedge clk);
 
     @(negedge clk);
-    rst = 0;
+    rst = 1;
 
     // Delay for some time
     repeat (10) @(posedge clk);

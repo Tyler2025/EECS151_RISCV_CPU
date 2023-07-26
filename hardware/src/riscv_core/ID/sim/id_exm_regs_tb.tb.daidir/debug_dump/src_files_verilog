@@ -1,0 +1,6 @@
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/control.v
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/id_exm_regs.v
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/immgen.v
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/control_tb.v
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/id_exm_regs_tb.v
+/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/sim/immgen_tb.v

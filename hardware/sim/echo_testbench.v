@@ -32,7 +32,7 @@ module echo_testbench();
   integer i, j, c, c1, c2;
   reg [31:0] cycle;
   always @(posedge clk) begin
-    if (rst === 1)
+    if (rst ===0)
       cycle <= 0;
     else
       cycle <= cycle + 1;
@@ -101,14 +101,14 @@ module echo_testbench();
     $dumpfile("echo_testbench.vcd");
     $dumpvars;
     #0;
-    rst = 1;
+    rst = 0;
     serial_in = 1;
 
     // Hold reset for a while
     repeat (10) @(posedge clk);
 
     @(negedge clk);
-    rst = 0;
+    rst = 1;
 
     // Delay for some time
     repeat (10) @(posedge clk);

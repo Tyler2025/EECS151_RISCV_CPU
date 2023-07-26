@@ -10,14 +10,20 @@ module z1top (
   output FPGA_SERIAL_TX
 );
 
-  wire cpu_clk;
-
   localparam CPU_CLOCK_PERIOD = 20;
   localparam CPU_CLOCK_FREQ   = 1_000_000_000 / CPU_CLOCK_PERIOD;
+  // Button parser
+  // Sample the button signal every 500us
+  localparam integer B_SAMPLE_CNT_MAX = 0.0005 * CPU_CLOCK_FREQ;
+  // The button is considered 'pressed' after 100ms of continuous pressing
+  localparam integer B_PULSE_CNT_MAX = 0.100 / 0.0005;
+/*
+  wire cpu_clk;
   // Clocking wizard IP from Vivado (wrapper of the PLLE module)
   // Generate CPU_CLOCK_FREQ clock from 125 MHz clock
   // PLL FREQ = (CLKFBOUT_MULT_F * 1000 / (CLKINx_PERIOD * DIVCLK_DIVIDE) must be within (800.000 MHz - 1600.000 MHz)
   // CLKOUTx_PERIOD = CLKINx_PERIOD x DIVCLK_DIVIDE x CLKOUT0_DIVIDE / CLKFBOUT_MULT_F
+  
   clk_wiz #(
     .CLKIN1_PERIOD(8),
     .CLKFBOUT_MULT_F(8),
@@ -29,12 +35,9 @@ module z1top (
     .locked(),                // output, unused
     .clk_in1(CLK_125MHZ_FPGA) // input
   );
+  assign cpu_clk = CLK_125MHZ_FPGA;
+  
 
-  // Button parser
-  // Sample the button signal every 500us
-  localparam integer B_SAMPLE_CNT_MAX = 0.0005 * CPU_CLOCK_FREQ;
-  // The button is considered 'pressed' after 100ms of continuous pressing
-  localparam integer B_PULSE_CNT_MAX = 0.100 / 0.0005;
 
   wire [3:0] buttons_pressed;
   button_parser #(
@@ -47,14 +50,28 @@ module z1top (
     .out(buttons_pressed)
   );
 
-  wire reset = (buttons_pressed[0] & SWITCHES[1]);
+  wire reset = buttons_pressed[0];
+  */
   wire [31:0] csr;
+  wire reset;
+  assign reset = buttons_pressed[0];
 
-  wire cpu_tx, cpu_rx;
+  wire [3:0] buttons_pressed;
+  debouncer #(
+    .WIDTH(4),
+    .SAMPLE_CNT_MAX(B_SAMPLE_CNT_MAX),
+    .PULSE_CNT_MAX(B_PULSE_CNT_MAX)
+  ) bp (
+    .clk(CLK_125MHZ_FPGA),
+    .glitchy_signal(BUTTONS),
+    .debounced_signal(buttons_pressed)
+  );
+
+  //wire cpu_tx, cpu_rx;
   Riscv151 #(
     .CPU_CLOCK_FREQ(CPU_CLOCK_FREQ)
   ) cpu (
-    .clk(cpu_clk),
+    .clk(CLK_125MHZ_FPGA),
     .rst(reset),
     .FPGA_SERIAL_TX(FPGA_SERIAL_TX),
     .FPGA_SERIAL_RX(FPGA_SERIAL_RX),
