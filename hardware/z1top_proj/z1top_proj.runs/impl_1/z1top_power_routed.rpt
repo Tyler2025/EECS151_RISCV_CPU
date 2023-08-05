@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date             : Fri Aug  4 02:17:00 2023
+| Date             : Sat Aug  5 21:56:18 2023
 | Host             : IC_EDA running 64-bit CentOS Linux release 7.9.2009 (Core)
 | Command          : report_power -file z1top_power_routed.rpt -pb z1top_power_summary_routed.pb -rpx z1top_power_routed.rpx
 | Design           : z1top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.262        |
+| Total On-Chip Power (W)  | 0.283        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.188        |
+| Dynamic (W)              | 0.209        |
 | Device Static (W)        | 0.073        |
 | Effective TJA (C/W)      | 2.8          |
-| Max Ambient (C)          | 84.3         |
-| Junction Temperature (C) | 25.7         |
+| Max Ambient (C)          | 84.2         |
+| Junction Temperature (C) | 25.8         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,19 +53,19 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.004 |        5 |       --- |             --- |
-| Slice Logic              |     0.011 |     2893 |       --- |             --- |
-|   LUT as Logic           |     0.010 |     1656 |     20800 |            7.96 |
+| Slice Logic              |     0.013 |     2878 |       --- |             --- |
+|   LUT as Logic           |     0.012 |     1647 |     20800 |            7.92 |
 |   LUT as Distributed RAM |    <0.001 |      148 |      9600 |            1.54 |
 |   CARRY4                 |    <0.001 |       86 |      8150 |            1.06 |
-|   Register               |    <0.001 |      567 |     41600 |            1.36 |
-|   F7/F8 Muxes            |    <0.001 |       98 |     32600 |            0.30 |
+|   Register               |    <0.001 |      570 |     41600 |            1.37 |
+|   F7/F8 Muxes            |    <0.001 |       99 |     32600 |            0.30 |
 |   Others                 |     0.000 |       32 |       --- |             --- |
-| Signals                  |     0.020 |     2359 |       --- |             --- |
-| Block RAM                |     0.045 |       34 |        50 |           68.00 |
+| Signals                  |     0.029 |     2348 |       --- |             --- |
+| Block RAM                |     0.054 |       34 |        50 |           68.00 |
 | PLL                      |     0.109 |        1 |         5 |           20.00 |
 | I/O                      |    <0.001 |       10 |       250 |            4.00 |
 | Static Power             |     0.073 |          |           |                 |
-| Total                    |     0.262 |          |           |                 |
+| Total                    |     0.283 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.097 |       0.087 |      0.010 |
+| Vccint    |       1.000 |     0.117 |       0.107 |      0.010 |
 | Vccaux    |       1.800 |     0.067 |       0.054 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -131,7 +131,7 @@ Table of Contents
 +-------------------------------+---------------------------------------+-----------------+
 | Clock                         | Domain                                | Constraint (ns) |
 +-------------------------------+---------------------------------------+-----------------+
-| clk_out1_design_1_clk_wiz_0_1 | clk_wiz/clk_out1_design_1_clk_wiz_0_1 |            17.0 |
+| clk_out1_design_1_clk_wiz_0_1 | clk_wiz/clk_out1_design_1_clk_wiz_0_1 |            14.0 |
 | clkfbout_design_1_clk_wiz_0_1 | clk_wiz/clkfbout_design_1_clk_wiz_0_1 |            20.0 |
 | sys_clk_pin                   | CLK_125MHZ_FPGA                       |            20.0 |
 +-------------------------------+---------------------------------------+-----------------+
@@ -146,17 +146,18 @@ Table of Contents
 +-------------------------+-----------+
 | Name                    | Power (W) |
 +-------------------------+-----------+
-| z1top                   |     0.188 |
+| z1top                   |     0.209 |
 |   clk_wiz               |     0.109 |
-|   cpu                   |     0.079 |
-|     bios_mem            |     0.006 |
+|   cpu                   |     0.100 |
+|     bios_mem            |     0.009 |
 |     branch_predictor_u1 |     0.002 |
 |       cache             |     0.002 |
-|     dmem                |     0.020 |
-|     exm_wb_regs_u1      |     0.011 |
-|     id_exm_regs_u1      |     0.013 |
-|     imem                |     0.022 |
-|     pc_reg_u1           |     0.003 |
+|     dmem                |     0.024 |
+|     exm_wb_regs_u1      |     0.015 |
+|     id_exm_regs_u1      |     0.018 |
+|     imem                |     0.025 |
+|     pc_reg_u1           |     0.004 |
+|     rf                  |     0.001 |
 +-------------------------+-----------+
 
 

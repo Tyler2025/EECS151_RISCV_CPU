@@ -15,23 +15,23 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tfgg484-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 113627 
-WARNING: [Synth 8-992] EXM_pc is already implicitly declared earlier [/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/Riscv151.v:257]
-WARNING: [Synth 8-992] pcplusfour is already implicitly declared earlier [/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/Riscv151.v:439]
+INFO: Helper process launched with PID 22933 
+WARNING: [Synth 8-992] EXM_pc is already implicitly declared earlier [/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/Riscv151.v:258]
+WARNING: [Synth 8-992] pcplusfour is already implicitly declared earlier [/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/Riscv151.v:447]
 WARNING: [Synth 8-6901] identifier 'buttons_pressed' is used before its declaration [/home/ICer/Project/project_skeleton_sp22/hardware/src/z1top.v:56]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1782.605 ; gain = 160.676 ; free physical = 1135 ; free virtual = 14656
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1782.605 ; gain = 160.676 ; free physical = 3646 ; free virtual = 14953
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'z1top' [/home/ICer/Project/project_skeleton_sp22/hardware/src/z1top.v:3]
-	Parameter CPU_CLOCK_PERIOD bound to: 17 - type: integer 
-	Parameter CPU_CLOCK_FREQ bound to: 58823529 - type: integer 
-	Parameter B_SAMPLE_CNT_MAX bound to: 29412 - type: integer 
+	Parameter CPU_CLOCK_PERIOD bound to: 14 - type: integer 
+	Parameter CPU_CLOCK_FREQ bound to: 71428571 - type: integer 
+	Parameter B_SAMPLE_CNT_MAX bound to: 35714 - type: integer 
 	Parameter B_PULSE_CNT_MAX bound to: 200 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'clk_wiz' [/home/ICer/Project/project_skeleton_sp22/hardware/src/clk_wiz.v:58]
 	Parameter CLKIN1_PERIOD bound to: 20 - type: integer 
 	Parameter CLKFBOUT_MULT_F bound to: 20 - type: integer 
 	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT0_DIVIDE bound to: 17 - type: integer 
+	Parameter CLKOUT0_DIVIDE bound to: 14 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [/home/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
@@ -45,7 +45,7 @@ INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [/home/Xilinx/Vivado/2019.1
 	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKIN1_PERIOD bound to: 20.000000 - type: float 
 	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
-	Parameter CLKOUT0_DIVIDE bound to: 17 - type: integer 
+	Parameter CLKOUT0_DIVIDE bound to: 14 - type: integer 
 	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
 	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
@@ -77,16 +77,16 @@ INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [/home/Xilinx/Vivado/
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz' (4#1) [/home/ICer/Project/project_skeleton_sp22/hardware/src/clk_wiz.v:58]
 INFO: [Synth 8-6157] synthesizing module 'debouncer' [/home/ICer/Project/project_skeleton_sp22/hardware/src/io_circuits/debouncer.v:1]
 	Parameter WIDTH bound to: 4 - type: integer 
-	Parameter SAMPLE_CNT_MAX bound to: 29412 - type: integer 
+	Parameter SAMPLE_CNT_MAX bound to: 35714 - type: integer 
 	Parameter PULSE_CNT_MAX bound to: 200 - type: integer 
-	Parameter WRAPPING_CNT_WIDTH bound to: 15 - type: integer 
+	Parameter WRAPPING_CNT_WIDTH bound to: 16 - type: integer 
 	Parameter SAT_CNT_WIDTH bound to: 9 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'synchronizer' [/home/ICer/Project/project_skeleton_sp22/hardware/src/io_circuits/synchronizer.v:1]
 	Parameter WIDTH bound to: 4 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'synchronizer' (5#1) [/home/ICer/Project/project_skeleton_sp22/hardware/src/io_circuits/synchronizer.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'debouncer' (6#1) [/home/ICer/Project/project_skeleton_sp22/hardware/src/io_circuits/debouncer.v:1]
 INFO: [Synth 8-6157] synthesizing module 'Riscv151' [/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/Riscv151.v:1]
-	Parameter CPU_CLOCK_FREQ bound to: 58823529 - type: integer 
+	Parameter CPU_CLOCK_FREQ bound to: 71428571 - type: integer 
 	Parameter RESET_PC bound to: 1073741824 - type: integer 
 	Parameter BAUD_RATE bound to: 115200 - type: integer 
 	Parameter BIOS_MIF_HEX bound to: bios151v3.mif - type: string 
@@ -130,11 +130,11 @@ INFO: [Synth 8-6157] synthesizing module 'REG_FILES' [/home/ICer/Project/project
 INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/REG_FILES.v:20]
 INFO: [Synth 8-6155] done synthesizing module 'REG_FILES' (10#1) [/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/REG_FILES.v:2]
 INFO: [Synth 8-6157] synthesizing module 'uart_receiver' [/home/ICer/Project/project_skeleton_sp22/hardware/src/io_circuits/uart_receiver.v:2]
-	Parameter CLOCK_FREQ bound to: 58823529 - type: integer 
+	Parameter CLOCK_FREQ bound to: 71428571 - type: integer 
 	Parameter BAUD_RATE bound to: 115200 - type: integer 
-	Parameter SYMBOL_EDGE_TIME bound to: 510 - type: integer 
-	Parameter SAMPLE_TIME bound to: 255 - type: integer 
-	Parameter CLOCK_COUNTER_WIDTH bound to: 9 - type: integer 
+	Parameter SYMBOL_EDGE_TIME bound to: 620 - type: integer 
+	Parameter SAMPLE_TIME bound to: 310 - type: integer 
+	Parameter CLOCK_COUNTER_WIDTH bound to: 10 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'REGISTER_CE' [/home/ICer/Project/project_skeleton_sp22/hardware/src/EECS151.v:38]
 	Parameter N bound to: 10 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'REGISTER_CE' (11#1) [/home/ICer/Project/project_skeleton_sp22/hardware/src/EECS151.v:38]
@@ -143,7 +143,7 @@ INFO: [Synth 8-6157] synthesizing module 'REGISTER_R_CE' [/home/ICer/Project/pro
 	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
 INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R_CE' (12#1) [/home/ICer/Project/project_skeleton_sp22/hardware/src/EECS151.v:63]
 INFO: [Synth 8-6157] synthesizing module 'REGISTER_R_CE__parameterized0' [/home/ICer/Project/project_skeleton_sp22/hardware/src/EECS151.v:63]
-	Parameter N bound to: 9 - type: integer 
+	Parameter N bound to: 10 - type: integer 
 	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
 INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R_CE__parameterized0' (12#1) [/home/ICer/Project/project_skeleton_sp22/hardware/src/EECS151.v:63]
 INFO: [Synth 8-6157] synthesizing module 'REGISTER_R_CE__parameterized1' [/home/ICer/Project/project_skeleton_sp22/hardware/src/EECS151.v:63]
@@ -152,10 +152,10 @@ INFO: [Synth 8-6157] synthesizing module 'REGISTER_R_CE__parameterized1' [/home/
 INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R_CE__parameterized1' (12#1) [/home/ICer/Project/project_skeleton_sp22/hardware/src/EECS151.v:63]
 INFO: [Synth 8-6155] done synthesizing module 'uart_receiver' (13#1) [/home/ICer/Project/project_skeleton_sp22/hardware/src/io_circuits/uart_receiver.v:2]
 INFO: [Synth 8-6157] synthesizing module 'uart_transmitter' [/home/ICer/Project/project_skeleton_sp22/hardware/src/io_circuits/uart_transmitter.v:1]
-	Parameter CLOCK_FREQ bound to: 58823529 - type: integer 
+	Parameter CLOCK_FREQ bound to: 71428571 - type: integer 
 	Parameter BAUD_RATE bound to: 115200 - type: integer 
-	Parameter SYMBOL_EDGE_TIME bound to: 510 - type: integer 
-	Parameter CLOCK_COUNTER_WIDTH bound to: 9 - type: integer 
+	Parameter SYMBOL_EDGE_TIME bound to: 620 - type: integer 
+	Parameter CLOCK_COUNTER_WIDTH bound to: 10 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'uart_transmitter' (14#1) [/home/ICer/Project/project_skeleton_sp22/hardware/src/io_circuits/uart_transmitter.v:1]
 INFO: [Synth 8-6157] synthesizing module 'pc_reg' [/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/pc_reg.v:2]
 	Parameter RESET_PC bound to: 1073741824 - type: integer 
@@ -193,8 +193,8 @@ INFO: [Synth 8-6157] synthesizing module 'WEN_align' [/home/ICer/Project/project
 INFO: [Synth 8-6155] done synthesizing module 'WEN_align' (26#1) [/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/WEN_align.v:1]
 INFO: [Synth 8-6157] synthesizing module 'Forwarding' [/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Forwarding.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'Forwarding' (27#1) [/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Forwarding.v:1]
-WARNING: [Synth 8-689] width (32) of port connection 'regq1src' does not match port width (1) of module 'Forwarding' [/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/Riscv151.v:366]
-WARNING: [Synth 8-689] width (32) of port connection 'regq2src' does not match port width (1) of module 'Forwarding' [/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/Riscv151.v:367]
+WARNING: [Synth 8-689] width (32) of port connection 'regq1src' does not match port width (1) of module 'Forwarding' [/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/Riscv151.v:374]
+WARNING: [Synth 8-689] width (32) of port connection 'regq2src' does not match port width (1) of module 'Forwarding' [/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/Riscv151.v:375]
 INFO: [Synth 8-6157] synthesizing module 'DMEM_Wen' [/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/DMEM_Wen.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'DMEM_Wen' (28#1) [/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/DMEM_Wen.v:1]
 INFO: [Synth 8-6157] synthesizing module 'IMEM_Wen' [/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/IMEM_Wen.v:1]
@@ -317,7 +317,7 @@ WARNING: [Synth 8-3331] design Uart_if has unconnected port inst[0]
 WARNING: [Synth 8-3331] design IMEM_Wen has unconnected port Pc[31]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1849.516 ; gain = 227.586 ; free physical = 1141 ; free virtual = 14663
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1849.516 ; gain = 227.586 ; free physical = 3651 ; free virtual = 14959
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -330,10 +330,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1867.324 ; gain = 245.395 ; free physical = 1147 ; free virtual = 14669
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1867.324 ; gain = 245.395 ; free physical = 3658 ; free virtual = 14965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1867.324 ; gain = 245.395 ; free physical = 1147 ; free virtual = 14669
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1867.324 ; gain = 245.395 ; free physical = 3658 ; free virtual = 14965
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -348,26 +348,26 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/z1top_propIm
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2022.004 ; gain = 0.000 ; free physical = 1043 ; free virtual = 14564
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2022.004 ; gain = 0.000 ; free physical = 3555 ; free virtual = 14862
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2022.004 ; gain = 0.000 ; free physical = 1043 ; free virtual = 14564
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2022.004 ; gain = 0.000 ; free physical = 3555 ; free virtual = 14862
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2022.004 ; gain = 400.074 ; free physical = 1127 ; free virtual = 14649
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2022.004 ; gain = 400.074 ; free physical = 3639 ; free virtual = 14946
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tfgg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2022.004 ; gain = 400.074 ; free physical = 1127 ; free virtual = 14649
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2022.004 ; gain = 400.074 ; free physical = 3639 ; free virtual = 14946
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2022.004 ; gain = 400.074 ; free physical = 1127 ; free virtual = 14649
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2022.004 ; gain = 400.074 ; free physical = 3639 ; free virtual = 14946
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-7031] Trying to map ROM "mem" into Block RAM due to explicit "ram_style" or "rom_style" specification
 INFO: [Synth 8-7031] Trying to map ROM "mem" into Block RAM due to explicit "ram_style" or "rom_style" specification
@@ -382,7 +382,7 @@ WARNING: [Synth 8-6841] Block RAM (mem_reg) originally specified as a Byte Wide 
 INFO: [Synth 8-3971] The signal "SYNC_RAM_DP_WBE:/mem_reg" was recognized as a true dual port RAM template.
 WARNING: [Synth 8-327] inferring latch for variable 'src_reg' [/home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/PCSrc.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2022.004 ; gain = 400.074 ; free physical = 1119 ; free virtual = 14642
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 2022.004 ; gain = 400.074 ; free physical = 3630 ; free virtual = 14938
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -397,8 +397,9 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     32 Bit       Adders := 5     
 	   3 Input     32 Bit       Adders := 1     
-	   2 Input     15 Bit       Adders := 1     
-	   2 Input      9 Bit       Adders := 6     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 4     
 	   2 Input      4 Bit       Adders := 2     
 	   2 Input      2 Bit       Adders := 2     
 +---XORs : 
@@ -406,9 +407,9 @@ Detailed RTL Component Info :
 +---Registers : 
 	              128 Bit    Registers := 1     
 	               32 Bit    Registers := 16    
-	               15 Bit    Registers := 1     
-	               10 Bit    Registers := 2     
-	                9 Bit    Registers := 6     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 4     
 	                4 Bit    Registers := 6     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
@@ -425,12 +426,10 @@ Detailed RTL Component Info :
 	   4 Input     32 Bit        Muxes := 4     
 	   7 Input     32 Bit        Muxes := 1     
 	   4 Input     16 Bit        Muxes := 1     
-	   2 Input     15 Bit        Muxes := 1     
-	   2 Input     10 Bit        Muxes := 1     
-	   2 Input      9 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 3     
 	   2 Input      8 Bit        Muxes := 3     
 	   4 Input      8 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 6     
 	   7 Input      4 Bit        Muxes := 2     
 	  10 Input      4 Bit        Muxes := 1     
 	  13 Input      4 Bit        Muxes := 1     
@@ -460,14 +459,13 @@ Detailed RTL Component Info :
 Module debouncer 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     15 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
 	   2 Input      9 Bit       Adders := 4     
 +---Registers : 
-	               15 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
 	                9 Bit    Registers := 4     
 	                1 Bit    Registers := 5     
 +---Muxes : 
-	   2 Input     15 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 8     
 Module SYNC_ROM_DP 
 Detailed RTL Component Info : 
@@ -504,7 +502,7 @@ Detailed RTL Component Info :
 Module REGISTER_R_CE__parameterized0 
 Detailed RTL Component Info : 
 +---Registers : 
-	                9 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
 Module REGISTER_R_CE__parameterized1 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -512,21 +510,19 @@ Detailed RTL Component Info :
 Module uart_receiver 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      9 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 1     
 Module uart_transmitter 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      9 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
-	               10 Bit    Registers := 1     
-	                9 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
 	                4 Bit    Registers := 1     
 	                1 Bit    Registers := 4     
 +---Muxes : 
-	   2 Input     10 Bit        Muxes := 1     
-	   2 Input      9 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 3     
 	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 5     
 Module pc_reg 
@@ -652,6 +648,7 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   4 Input     32 Bit        Muxes := 1     
 	   2 Input     32 Bit        Muxes := 16    
+	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -679,7 +676,7 @@ WARNING: [Synth 8-3332] Sequential element (src_reg[2]) is unused and will be re
 WARNING: [Synth 8-3332] Sequential element (src_reg[1]) is unused and will be removed from module PCSrc.
 WARNING: [Synth 8-3332] Sequential element (src_reg[0]) is unused and will be removed from module PCSrc.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 2022.004 ; gain = 400.074 ; free physical = 1081 ; free virtual = 14611
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 2022.004 ; gain = 400.074 ; free physical = 3591 ; free virtual = 14907
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -708,10 +705,10 @@ Note: The table above is a preliminary report that shows the Distributed RAMs at
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6837] The timing for the instance cpu/bios_memi_0/bios_mem/read_data0_reg_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance cpu/bios_memi_0/bios_mem/read_data0_reg_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance cpu/bios_memi_1/bios_mem/read_data1_reg_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance cpu/bios_memi_1/bios_mem/read_data1_reg_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance cpu/bios_memi_1/bios_mem/read_data0_reg_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance cpu/bios_memi_1/bios_mem/read_data0_reg_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance cpu/bios_memi_2/bios_mem/read_data1_reg_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance cpu/bios_memi_2/bios_mem/read_data1_reg_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance cpu/dmem/i_2/mem_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance cpu/dmem/i_2/mem_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance cpu/dmem/i_2/mem_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
@@ -755,13 +752,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 2022.004 ; gain = 400.074 ; free physical = 962 ; free virtual = 14492
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 2022.004 ; gain = 400.074 ; free physical = 3472 ; free virtual = 14788
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 2022.004 ; gain = 400.074 ; free physical = 941 ; free virtual = 14471
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 2022.004 ; gain = 400.074 ; free physical = 3452 ; free virtual = 14768
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -834,7 +831,7 @@ INFO: [Synth 8-6837] The timing for the instance cpu/imem/mem_reg_3_1 (implement
 INFO: [Synth 8-6837] The timing for the instance cpu/imem/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance cpu/imem/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 2047.016 ; gain = 425.086 ; free physical = 941 ; free virtual = 14471
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 2044.016 ; gain = 422.086 ; free physical = 3452 ; free virtual = 14768
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -868,7 +865,7 @@ INFO: [Synth 8-6064] Net alu[12] is driving 34 big block pins (URAM, BRAM and DS
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2049.988 ; gain = 428.059 ; free physical = 941 ; free virtual = 14471
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 2046.988 ; gain = 425.059 ; free physical = 3452 ; free virtual = 14768
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -881,7 +878,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2049.988 ; gain = 428.059 ; free physical = 941 ; free virtual = 14471
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 2046.988 ; gain = 425.059 ; free physical = 3452 ; free virtual = 14768
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -893,25 +890,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2049.988 ; gain = 428.059 ; free physical = 941 ; free virtual = 14471
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 2046.988 ; gain = 425.059 ; free physical = 3452 ; free virtual = 14768
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2049.988 ; gain = 428.059 ; free physical = 941 ; free virtual = 14471
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 2046.988 ; gain = 425.059 ; free physical = 3452 ; free virtual = 14768
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2049.988 ; gain = 428.059 ; free physical = 941 ; free virtual = 14471
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 2046.988 ; gain = 425.059 ; free physical = 3452 ; free virtual = 14768
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2049.988 ; gain = 428.059 ; free physical = 941 ; free virtual = 14471
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 2046.988 ; gain = 425.059 ; free physical = 3452 ; free virtual = 14768
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -930,12 +927,12 @@ Report Cell Usage:
 |1     |BUFG       |     2|
 |2     |CARRY4     |    86|
 |3     |LUT1       |     6|
-|4     |LUT2       |   113|
-|5     |LUT3       |   358|
-|6     |LUT4       |   297|
-|7     |LUT5       |   286|
-|8     |LUT6       |   880|
-|9     |MUXF7      |    32|
+|4     |LUT2       |   112|
+|5     |LUT3       |   360|
+|6     |LUT4       |   264|
+|7     |LUT5       |   297|
+|8     |LUT6       |   882|
+|9     |MUXF7      |    33|
 |10    |MUXF8      |    16|
 |11    |PLLE2_ADV  |     1|
 |12    |RAM128X1D  |    25|
@@ -944,9 +941,9 @@ Report Cell Usage:
 |15    |RAMB36E1_1 |     1|
 |16    |RAMB36E1_2 |    16|
 |17    |RAMB36E1_3 |    16|
-|18    |FDCE       |   152|
+|18    |FDCE       |   153|
 |19    |FDPE       |     3|
-|20    |FDRE       |   438|
+|20    |FDRE       |   440|
 |21    |IBUF       |     3|
 |22    |OBUF       |     7|
 +------+-----------+------+
@@ -955,45 +952,45 @@ Report Instance Areas:
 +------+------------------------+--------------------------------+------+
 |      |Instance                |Module                          |Cells |
 +------+------------------------+--------------------------------+------+
-|1     |top                     |                                |  2751|
-|2     |  cpu                   |Riscv151                        |  2687|
+|1     |top                     |                                |  2736|
+|2     |  cpu                   |Riscv151                        |  2670|
 |3     |    PCSrc_u1            |PCSrc                           |     1|
 |4     |    Cycle_Counters_u1   |Cycle_Counters                  |    40|
 |5     |    Inst_Counters_u1    |Inst_Counters                   |    32|
 |6     |    CSR_u1              |CSR                             |    32|
-|7     |    bios_mem            |SYNC_ROM_DP                     |    35|
-|8     |    branch_predictor_u1 |branch_predictor                |   294|
-|9     |      cache             |bp_cache                        |   294|
+|7     |    bios_mem            |SYNC_ROM_DP                     |    87|
+|8     |    branch_predictor_u1 |branch_predictor                |   295|
+|9     |      cache             |bp_cache                        |   295|
 |10    |    dmem                |SYNC_RAM_WBE                    |    16|
 |11    |    exm_wb_regs_u1      |exm_wb_regs                     |   884|
-|12    |    id_exm_regs_u1      |id_exm_regs                     |  1004|
-|13    |    imem                |SYNC_RAM_DP_WBE                 |    96|
-|14    |    imm_gen_u1          |immgen                          |    34|
-|15    |    pc_reg_u1           |pc_reg                          |   105|
+|12    |    id_exm_regs_u1      |id_exm_regs                     |  1001|
+|13    |    imem                |SYNC_RAM_DP_WBE                 |    24|
+|14    |    imm_gen_u1          |immgen                          |    39|
+|15    |    pc_reg_u1           |pc_reg                          |   101|
 |16    |    rf                  |REG_FILES                       |    13|
-|17    |    uart_rx             |uart_receiver                   |    47|
-|18    |      bit_counter       |REGISTER_R_CE                   |    12|
-|19    |      clock_counter     |REGISTER_R_CE__parameterized0   |    23|
+|17    |    uart_rx             |uart_receiver                   |    51|
+|18    |      bit_counter       |REGISTER_R_CE                   |    13|
+|19    |      clock_counter     |REGISTER_R_CE__parameterized0   |    26|
 |20    |      has_byte_reg      |REGISTER_R_CE__parameterized1   |     1|
 |21    |      rx_shift          |REGISTER_CE                     |    10|
 |22    |      start_reg         |REGISTER_R_CE__parameterized1_0 |     1|
 |23    |    uart_tx             |uart_transmitter                |    54|
-|24    |  bp                    |debouncer                       |    51|
+|24    |  bp                    |debouncer                       |    53|
 |25    |    s1                  |synchronizer                    |     3|
 |26    |  clk_wiz               |clk_wiz                         |     4|
 +------+------------------------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2049.988 ; gain = 428.059 ; free physical = 941 ; free virtual = 14471
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 2046.988 ; gain = 425.059 ; free physical = 3452 ; free virtual = 14768
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 242 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2049.988 ; gain = 273.379 ; free physical = 993 ; free virtual = 14524
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2049.992 ; gain = 428.059 ; free physical = 993 ; free virtual = 14524
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 2046.988 ; gain = 270.379 ; free physical = 3504 ; free virtual = 14820
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 2046.992 ; gain = 425.059 ; free physical = 3504 ; free virtual = 14820
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 206 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 207 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2065.996 ; gain = 0.000 ; free physical = 942 ; free virtual = 14473
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2062.996 ; gain = 0.000 ; free physical = 3453 ; free virtual = 14770
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 37 instances were transformed.
   RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 25 instances
@@ -1002,10 +999,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 191 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 2065.996 ; gain = 585.430 ; free physical = 1053 ; free virtual = 14583
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2065.996 ; gain = 0.000 ; free physical = 1053 ; free virtual = 14583
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 2062.996 ; gain = 584.398 ; free physical = 3562 ; free virtual = 14878
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2062.996 ; gain = 0.000 ; free physical = 3562 ; free virtual = 14878
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/ICer/Project/project_skeleton_sp22/hardware/z1top_proj/z1top_proj.runs/synth_1/z1top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file z1top_utilization_synth.rpt -pb z1top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Aug  4 02:15:42 2023...
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  5 21:54:21 2023...

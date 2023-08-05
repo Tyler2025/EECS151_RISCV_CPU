@@ -2,99 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Aug  4 17:09:45 2023
-# Process ID: 127533
+# Start of session at: Sat Aug  5 21:59:41 2023
+# Process ID: 28118
 # Current directory: /home/ICer/Project/project_skeleton_sp22/hardware
-# Command line: vivado
+# Command line: vivado -mode batch -source scripts/program_fpga.tcl -tclargs bitstream_files/z1top.bit
 # Log file: /home/ICer/Project/project_skeleton_sp22/hardware/vivado.log
 # Journal file: /home/ICer/Project/project_skeleton_sp22/hardware/vivado.jou
 #-----------------------------------------------------------
-start_gui
-open_project /home/ICer/Project/project_skeleton_sp22/hardware/z1top_proj/z1top_proj.xpr
-open_run impl_1
-update_compile_order -fileset sources_1
-create_run synth_2 -flow {Vivado Synthesis 2019} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
-current_run [get_runs synth_2]
-set_property STEPS.SYNTH_DESIGN.ARGS.FANOUT_LIMIT 10 [get_runs synth_2]
-launch_runs synth_2 -jobs 3
-wait_on_run synth_2
-close_design
-launch_runs impl_2 -jobs 3
-wait_on_run impl_2
-open_run impl_2
-report_timing -from [get_pins cpu/dmem/mem_reg_3_1/CLKARDCLK] -to [get_pins {cpu/imem/mem_reg_3_2/ADDRARDADDR[11]}] -delay_type min_max -max_paths 10 -sort_by group -input_pins -routable_nets -name timing_1
-close_design
-synth_design -rtl -name rtl_1
-open_run impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
-current_design rtl_1
-current_design impl_2
+source scripts/program_fpga.tcl

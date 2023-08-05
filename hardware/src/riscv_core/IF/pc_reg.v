@@ -5,6 +5,7 @@ module pc_reg #(
     input clk,
     input rst_n,
     input br_pred_taken,
+    input stall,
     input [2:0] pcsrc,
     input [31:0] alu_addr,
     input [31:0] inst,
@@ -16,7 +17,7 @@ module pc_reg #(
     
     //PC source MUX
     always @(*) begin
-        if(inst[6:2] == 5'b11011 || br_pred_taken)
+        if((inst[6:2] == 5'b11011 || br_pred_taken) && !stall)
             next_pc = jal_addr;
         else if(pcsrc == 1)
             next_pc = alu_addr;

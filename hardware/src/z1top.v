@@ -10,7 +10,7 @@ module z1top (
   output FPGA_SERIAL_TX
 );
 
-  localparam CPU_CLOCK_PERIOD = 17;
+  localparam CPU_CLOCK_PERIOD = 14;
   localparam CPU_CLOCK_FREQ   = 1_000_000_000 / CPU_CLOCK_PERIOD;
   // Button parser
   // Sample the button signal every 500us

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Fri Aug  4 02:16:59 2023
+| Date         : Sat Aug  5 21:56:17 2023
 | Host         : IC_EDA running 64-bit CentOS Linux release 7.9.2009 (Core)
 | Command      : report_methodology -file z1top_methodology_drc_routed.rpt -pb z1top_methodology_drc_routed.pb -rpx z1top_methodology_drc_routed.rpx
 | Design       : z1top
@@ -36,7 +36,7 @@ Table of Contents
 -----------------
 LUTAR-1#1 Warning
 LUT drives async reset alert  
-LUT cell cpu/exm_wb_regs_u1/Inst_o[31]_i_100, with 2 or more inputs, drives asynchronous preset/clear pin(s) cpu/CSR_u1/csr_reg[0]/CLR, cpu/CSR_u1/csr_reg[1]/CLR, cpu/CSR_u1/csr_reg[2]/CLR, cpu/CSR_u1/csr_reg[3]/CLR, cpu/CSR_u1/csr_reg[4]/CLR, cpu/CSR_u1/csr_reg[5]/CLR, cpu/Cycle_Counters_u1/cycles_reg[0]/CLR, cpu/Cycle_Counters_u1/cycles_reg[10]/CLR, cpu/Cycle_Counters_u1/cycles_reg[11]/CLR, cpu/Cycle_Counters_u1/cycles_reg[12]/CLR, cpu/Cycle_Counters_u1/cycles_reg[13]/CLR, cpu/Cycle_Counters_u1/cycles_reg[14]/CLR, cpu/Cycle_Counters_u1/cycles_reg[15]/CLR, cpu/Cycle_Counters_u1/cycles_reg[16]/CLR, cpu/Cycle_Counters_u1/cycles_reg[17]/CLR (the first 15 of 129 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell cpu/exm_wb_regs_u1/Inst_o[31]_i_100, with 2 or more inputs, drives asynchronous preset/clear pin(s) cpu/CSR_u1/csr_reg[0]/CLR, cpu/CSR_u1/csr_reg[1]/CLR, cpu/CSR_u1/csr_reg[2]/CLR, cpu/CSR_u1/csr_reg[3]/CLR, cpu/CSR_u1/csr_reg[4]/CLR, cpu/CSR_u1/csr_reg[5]/CLR, cpu/Cycle_Counters_u1/cycles_reg[0]/CLR, cpu/Cycle_Counters_u1/cycles_reg[10]/CLR, cpu/Cycle_Counters_u1/cycles_reg[11]/CLR, cpu/Cycle_Counters_u1/cycles_reg[12]/CLR, cpu/Cycle_Counters_u1/cycles_reg[13]/CLR, cpu/Cycle_Counters_u1/cycles_reg[14]/CLR, cpu/Cycle_Counters_u1/cycles_reg[15]/CLR, cpu/Cycle_Counters_u1/cycles_reg[16]/CLR, cpu/Cycle_Counters_u1/cycles_reg[17]/CLR (the first 15 of 130 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 SYNTH-6#1 Warning

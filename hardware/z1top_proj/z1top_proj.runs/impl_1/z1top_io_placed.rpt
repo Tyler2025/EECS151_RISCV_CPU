@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date                      : Fri Aug  4 02:16:22 2023
+| Date                      : Sat Aug  5 21:55:15 2023
 | Host                      : IC_EDA running 64-bit CentOS Linux release 7.9.2009 (Core)
 | Command                   : report_io -file z1top_io_placed.rpt
 | Design                    : z1top

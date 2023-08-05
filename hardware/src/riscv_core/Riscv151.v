@@ -183,6 +183,7 @@ module Riscv151 #(
   wire [31:0] inst;
   wire [31:0] Imm;
   wire br_pred_taken;
+  wire stall;
   wire is_br_guess,is_br_check,br_taken_check;
 
   assign imem_addra = next_pc[15:2];
@@ -195,6 +196,7 @@ module Riscv151 #(
 	.clk(clk),
 	.rst_n(rst),
 	.br_pred_taken(br_pred_taken),
+	.stall(stall),
 	.pcsrc(pcsrc),
 	.alu_addr(alu),
       .inst(inst),
@@ -216,10 +218,9 @@ module Riscv151 #(
 	.br_pred_taken(br_pred_taken)
   );  
   //ID Phase
-  wire [31:0] inst_src;//inst and stall mux
-  wire stall;
-  assign inst_src = pc[30] ? bios_douta : imem_douta;//if pc[30] == 1 then from bios else from iMEM
-  assign inst = stall ? 32'h00000013 : inst_src;//if stall then nop else inst_src 
+  //wire [31:0] inst_src;//inst and stall mux
+  assign inst = pc[30] ? bios_douta : imem_douta;//if pc[30] == 1 then from bios else from iMEM
+  //assign inst = stall ? 32'h00000013 : inst_src;//if stall then nop else inst_src 
   assign rf_ra1 = inst[19:15];
   assign rf_ra2 = inst[24:20];
   wire [2:0] ImmSel;
@@ -261,6 +262,13 @@ module Riscv151 #(
   wire [2:0] EXM_LDSel;
   wire [1:0] EXM_WBSel;
   wire EXM_RegWen;
+
+  wire [3:0] MEMWen_stall;//stall logic
+  wire RegWen_stall;
+  wire [31:0] inst_stall;
+  assign MEMWen_stall = stall ? 4'h0 : MEMWen;
+  assign RegWen_stall = stall ? 1'b0 : RegWen;
+  assign inst_stall   = stall ? 32'h00000013 : inst;
   id_exm_regs id_exm_regs_u1(//ID/EXM pipeline register
 	.clk(clk),
 	.br_pred_taken(br_pred_taken),
@@ -272,12 +280,12 @@ module Riscv151 #(
 	.BSel(BSel),
 	.ASel(ASel),
 	.ALUSel(ALUSel),
-	.MEMWen(MEMWen),
+	.MEMWen(MEMWen_stall),
 	.CSRSrc(CSRSrc),
 	.LDSel(LDSel),
 	.WBSel(WBSel),
-	.RegWen(RegWen),
-	.Inst(inst),
+	.RegWen(RegWen_stall),
+	.Inst(inst_stall),
 
 	.br_pred_taken_o(EXM_br_pred_taken),
 	.pc_o(EXM_pc),
@@ -464,11 +472,18 @@ module Riscv151 #(
 	if(WB_alu[30]) MEM_Out = bios_doutb;
 	else if(WB_alu[28]) MEM_Out = dmem_douta;
 	else if(WB_alu[31]) begin
-			if(WB_alu[7:0] == 8'h00) MEM_Out = uart_control;
+			case(WB_alu[7:0])
+				8'h00 : MEM_Out = uart_control;
+				8'h04 : MEM_Out = uart_dout;
+				8'h10 : MEM_Out = cycle_num;
+				8'h14 : MEM_Out = inst_num;
+				default : MEM_Out = 32'h0;
+			endcase
+			/*if(WB_alu[7:0] == 8'h00) MEM_Out = uart_control;
 			else if(WB_alu[7:0] == 8'h04) MEM_Out = uart_dout;
 			else if(WB_alu[7:0] == 8'h10) MEM_Out = cycle_num;
 			else if(WB_alu[7:0] == 8'h14) MEM_Out = inst_num;
-			else MEM_Out = 32'h0;
+			else MEM_Out = 32'h0;*/
 		end
 	else MEM_Out = 32'h0;
   end

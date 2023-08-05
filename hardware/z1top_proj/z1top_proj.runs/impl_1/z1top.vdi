@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Aug  4 02:15:43 2023
-# Process ID: 113995
+# Start of session at: Sat Aug  5 21:54:23 2023
+# Process ID: 23297
 # Current directory: /home/ICer/Project/project_skeleton_sp22/hardware/z1top_proj/z1top_proj.runs/impl_1
 # Command line: vivado -log z1top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source z1top.tcl -notrace
 # Log file: /home/ICer/Project/project_skeleton_sp22/hardware/z1top_proj/z1top_proj.runs/impl_1/z1top.vdi
@@ -14,14 +14,14 @@ Command: link_design -top z1top -part xc7a35tfgg484-2
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7a35tfgg484-2
-INFO: [Netlist 29-17] Analyzing 206 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 207 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2019.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 Parsing XDC File [/home/ICer/Project/project_skeleton_sp22/hardware/constr/z1top.xdc]
 Finished Parsing XDC File [/home/ICer/Project/project_skeleton_sp22/hardware/constr/z1top.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1768.500 ; gain = 0.000 ; free physical = 1211 ; free virtual = 14733
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1768.496 ; gain = 0.000 ; free physical = 3723 ; free virtual = 15031
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 37 instances were transformed.
   RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 25 instances
@@ -29,6 +29,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
+link_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1768.496 ; gain = 243.832 ; free physical = 3723 ; free virtual = 15031
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -39,56 +40,56 @@ INFO: [DRC 23-27] Running DRC with 6 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1888.930 ; gain = 120.430 ; free physical = 1204 ; free virtual = 14726
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1886.926 ; gain = 118.430 ; free physical = 3715 ; free virtual = 15022
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-2] Deriving generated clocks
-Ending Cache Timing Information Task | Checksum: 22b219f36
+Ending Cache Timing Information Task | Checksum: 213ab9a24
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2289.945 ; gain = 401.016 ; free physical = 824 ; free virtual = 14346
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2289.910 ; gain = 402.984 ; free physical = 3337 ; free virtual = 14644
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 22e658575
+Phase 1 Retarget | Checksum: 228165348
 
-Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2405.883 ; gain = 0.004 ; free physical = 709 ; free virtual = 14231
+Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2405.848 ; gain = 0.004 ; free physical = 3222 ; free virtual = 14529
 INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
 INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 230968ba4
+Phase 2 Constant propagation | Checksum: 1c8ef06c9
 
-Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2405.883 ; gain = 0.004 ; free physical = 709 ; free virtual = 14231
+Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2405.848 ; gain = 0.004 ; free physical = 3222 ; free virtual = 14529
 INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 1dc9ceaf1
+Phase 3 Sweep | Checksum: 1bec679d2
 
-Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2405.883 ; gain = 0.004 ; free physical = 709 ; free virtual = 14231
+Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2405.848 ; gain = 0.004 ; free physical = 3222 ; free virtual = 14529
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 52 cells
 
 Phase 4 BUFG optimization
-Phase 4 BUFG optimization | Checksum: 1dc9ceaf1
+Phase 4 BUFG optimization | Checksum: 1bec679d2
 
-Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2405.883 ; gain = 0.004 ; free physical = 709 ; free virtual = 14231
+Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2405.848 ; gain = 0.004 ; free physical = 3222 ; free virtual = 14529
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 1dc9ceaf1
+Phase 5 Shift Register Optimization | Checksum: 1bec679d2
 
-Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.19 . Memory (MB): peak = 2405.883 ; gain = 0.004 ; free physical = 709 ; free virtual = 14231
+Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2405.848 ; gain = 0.004 ; free physical = 3222 ; free virtual = 14529
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 1dc9ceaf1
+Phase 6 Post Processing Netlist | Checksum: 1bec679d2
 
-Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.20 . Memory (MB): peak = 2405.883 ; gain = 0.004 ; free physical = 709 ; free virtual = 14231
+Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2405.848 ; gain = 0.004 ; free physical = 3222 ; free virtual = 14529
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 Opt_design Change Summary
 =========================
@@ -109,15 +110,15 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2405.883 ; gain = 0.000 ; free physical = 709 ; free virtual = 14231
-Ending Logic Optimization Task | Checksum: 19953c122
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2405.848 ; gain = 0.000 ; free physical = 3222 ; free virtual = 14529
+Ending Logic Optimization Task | Checksum: 2077ecdc7
 
-Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2405.883 ; gain = 0.004 ; free physical = 709 ; free virtual = 14231
+Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.27 . Memory (MB): peak = 2405.848 ; gain = 0.004 ; free physical = 3222 ; free virtual = 14529
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=2.275 | TNS=0.000 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.983 | TNS=0.000 |
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
@@ -129,34 +130,34 @@ Starting PowerOpt Patch Enables Task
 INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 34 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 68
-Ending PowerOpt Patch Enables Task | Checksum: 19953c122
+Ending PowerOpt Patch Enables Task | Checksum: 2077ecdc7
 
-Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2663.031 ; gain = 0.000 ; free physical = 681 ; free virtual = 14203
-Ending Power Optimization Task | Checksum: 19953c122
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2663.934 ; gain = 0.000 ; free physical = 3193 ; free virtual = 14500
+Ending Power Optimization Task | Checksum: 2077ecdc7
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2663.031 ; gain = 257.148 ; free physical = 686 ; free virtual = 14208
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2663.934 ; gain = 258.086 ; free physical = 3200 ; free virtual = 14508
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 19953c122
+Ending Final Cleanup Task | Checksum: 2077ecdc7
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2663.031 ; gain = 0.000 ; free physical = 686 ; free virtual = 14208
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2663.934 ; gain = 0.000 ; free physical = 3200 ; free virtual = 14508
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2663.031 ; gain = 0.000 ; free physical = 686 ; free virtual = 14208
-Ending Netlist Obfuscation Task | Checksum: 19953c122
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2663.934 ; gain = 0.000 ; free physical = 3200 ; free virtual = 14508
+Ending Netlist Obfuscation Task | Checksum: 2077ecdc7
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2663.031 ; gain = 0.000 ; free physical = 686 ; free virtual = 14208
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2663.934 ; gain = 0.000 ; free physical = 3200 ; free virtual = 14508
 INFO: [Common 17-83] Releasing license: Implementation
 32 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2663.031 ; gain = 894.531 ; free physical = 686 ; free virtual = 14208
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2663.031 ; gain = 0.000 ; free physical = 686 ; free virtual = 14208
+opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2663.934 ; gain = 895.438 ; free physical = 3200 ; free virtual = 14508
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2663.934 ; gain = 0.000 ; free physical = 3200 ; free virtual = 14508
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00 . Memory (MB): peak = 2663.031 ; gain = 0.000 ; free physical = 685 ; free virtual = 14208
+Write XDEF Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2663.934 ; gain = 0.000 ; free physical = 3198 ; free virtual = 14507
 INFO: [Common 17-1381] The checkpoint '/home/ICer/Project/project_skeleton_sp22/hardware/z1top_proj/z1top_proj.runs/impl_1/z1top_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file z1top_drc_opted.rpt -pb z1top_drc_opted.pb -rpx z1top_drc_opted.rpx
 Command: report_drc -file z1top_drc_opted.rpt -pb z1top_drc_opted.pb -rpx z1top_drc_opted.rpx
@@ -204,37 +205,37 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 679 ; free virtual = 14201
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 142415a81
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3191 ; free virtual = 14499
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 162a14f89
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 679 ; free virtual = 14201
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 679 ; free virtual = 14201
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3191 ; free virtual = 14499
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3191 ; free virtual = 14499
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: a3fdcf7e
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1176fa15f
 
-Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:00.34 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 676 ; free virtual = 14198
+Time (s): cpu = 00:00:00.50 ; elapsed = 00:00:00.35 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3188 ; free virtual = 14497
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 117310bcb
+Phase 1.3 Build Placer Netlist Model | Checksum: 214ea7b3a
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.75 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 672 ; free virtual = 14194
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.77 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3185 ; free virtual = 14493
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 117310bcb
+Phase 1.4 Constrain Clocks/Macros | Checksum: 214ea7b3a
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.75 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 672 ; free virtual = 14195
-Phase 1 Placer Initialization | Checksum: 117310bcb
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.77 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3185 ; free virtual = 14493
+Phase 1 Placer Initialization | Checksum: 214ea7b3a
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.75 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 672 ; free virtual = 14195
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.78 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3185 ; free virtual = 14493
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 13fbafa2c
+Phase 2.1 Floorplanning | Checksum: 1f5c48981
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.95 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 670 ; free virtual = 14193
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.98 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3183 ; free virtual = 14492
 
 Phase 2.2 Global Placement Core
 
@@ -242,20 +243,70 @@ Phase 2.2.1 Physical Synthesis In Placer
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[11] could not be optimized because driver cpu/pc_reg_u1/mem_reg_0_0_i_4 could not be replicated
-INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[13] could not be optimized because driver cpu/pc_reg_u1/mem_reg_0_0_i_2 could not be replicated
 INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[5] could not be optimized because driver cpu/pc_reg_u1/read_data0_reg_reg_0_i_6 could not be replicated
+INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[10] could not be optimized because driver cpu/pc_reg_u1/read_data0_reg_reg_0_i_1 could not be replicated
 INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[9] could not be optimized because driver cpu/pc_reg_u1/read_data0_reg_reg_0_i_2 could not be replicated
 INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[8] could not be optimized because driver cpu/pc_reg_u1/read_data0_reg_reg_0_i_3 could not be replicated
-INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[12] could not be optimized because driver cpu/pc_reg_u1/mem_reg_0_0_i_3 could not be replicated
-INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[10] could not be optimized because driver cpu/pc_reg_u1/read_data0_reg_reg_0_i_1 could not be replicated
-INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[7] could not be optimized because driver cpu/pc_reg_u1/read_data0_reg_reg_0_i_4 could not be replicated
 INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[4] could not be optimized because driver cpu/pc_reg_u1/read_data0_reg_reg_0_i_7 could not be replicated
+INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[6] could not be optimized because driver cpu/pc_reg_u1/read_data0_reg_reg_0_i_5 could not be replicated
 INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[2] could not be optimized because driver cpu/pc_reg_u1/read_data0_reg_reg_0_i_9 could not be replicated
 INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[0] could not be optimized because driver cpu/pc_reg_u1/read_data0_reg_reg_0_i_11 could not be replicated
-INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[6] could not be optimized because driver cpu/pc_reg_u1/read_data0_reg_reg_0_i_5 could not be replicated
-INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[3] could not be optimized because driver cpu/pc_reg_u1/read_data0_reg_reg_0_i_8 could not be replicated
+INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[11] could not be optimized because driver cpu/pc_reg_u1/mem_reg_0_0_i_4 could not be replicated
+INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[7] could not be optimized because driver cpu/pc_reg_u1/read_data0_reg_reg_0_i_4 could not be replicated
 INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[1] could not be optimized because driver cpu/pc_reg_u1/read_data0_reg_reg_0_i_10 could not be replicated
+INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[3] could not be optimized because driver cpu/pc_reg_u1/read_data0_reg_reg_0_i_8 could not be replicated
+INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[12] could not be optimized because driver cpu/pc_reg_u1/mem_reg_0_0_i_3 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/ADDRBWRADDR[5] could not be optimized because driver cpu/id_exm_regs_u1/read_data0_reg_reg_0_i_17 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[26] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_3_1_i_2 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/ADDRBWRADDR[11] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_0_0_i_7 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/alu[7] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_0_0_i_9 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[20] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_2_2_i_12 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[18] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_2_1_i_2 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[27] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_3_1_i_1 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[17] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_2_0_i_1 could not be replicated
+INFO: [Physopt 32-117] Net cpu/pc_reg_u1/D[13] could not be optimized because driver cpu/pc_reg_u1/mem_reg_0_0_i_2 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[21] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_2_2_i_11 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[19] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_2_1_i_1 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[16] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_2_0_i_2 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[12] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_1_2_i_2 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[10] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_1_1_i_2 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[25] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_3_0_i_1 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[24] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_3_0_i_2 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[29] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_3_2_i_1 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[28] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_3_2_i_2 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/imem_web[1] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_1_0_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[23] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_2_3_i_1 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/alu[14] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_0_0_i_2__0 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/ADDRBWRADDR[12] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_0_0_i_6 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/imem_web[0] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_0_0_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[31] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_3_3_i_1 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[11] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_1_1_i_1 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[15] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_1_3_i_1 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/alu[13] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_0_0_i_3__0 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[30] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_3_3_i_2 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[14] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_1_3_i_2 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/dmem_wea[0] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_0_0_i_17__0 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/alu[15] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_0_0_i_1 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[22] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_2_3_i_2 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/imem_web[3] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_3_0_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[5] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_0_2_i_1 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[4] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_0_2_i_2 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/ADDRBWRADDR[13] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_0_0_i_5 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/imem_web[2] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_2_0_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[9] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_1_0_i_1 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[13] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_1_2_i_1 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/dmem_wea[3] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_3_0_i_3 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[8] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_1_0_i_2 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[6] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_0_3_i_2 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/dmem_wea[1] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_1_0_i_3 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[7] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_0_3_i_1 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[2] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_0_1_i_2 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[3] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_0_1_i_1 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/dmem_wea[2] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_2_0_i_3 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[1] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_0_0_i_15__0 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/p_2_in[0] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_0_0_i_16__0 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/ADDRARDADDR[2] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_0_0_i_12 could not be replicated
+INFO: [Physopt 32-117] Net cpu/id_exm_regs_u1/addr[0] could not be optimized because driver cpu/id_exm_regs_u1/mem_reg_2_2_i_10__0 could not be replicated
 INFO: [Physopt 32-68] No nets found for critical-cell optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
@@ -267,7 +318,7 @@ INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found i
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-949] No candidate nets found for HD net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 658 ; free virtual = 14180
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3172 ; free virtual = 14480
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -286,60 +337,65 @@ Summary of Physical Synthesis Optimizations
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.2.1 Physical Synthesis In Placer | Checksum: 2a00ed11
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: b3c41a6f
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 657 ; free virtual = 14180
-Phase 2.2 Global Placement Core | Checksum: 5c96ad9e
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3172 ; free virtual = 14480
+Phase 2.2 Global Placement Core | Checksum: 1449419c1
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 657 ; free virtual = 14180
-Phase 2 Global Placement | Checksum: 5c96ad9e
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3171 ; free virtual = 14480
+Phase 2 Global Placement | Checksum: 1449419c1
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 659 ; free virtual = 14181
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3173 ; free virtual = 14481
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: b33b8cb6
+Phase 3.1 Commit Multi Column Macros | Checksum: e5cc245b
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 659 ; free virtual = 14182
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3173 ; free virtual = 14481
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 12f5056b1
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1aa4f9f65
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 658 ; free virtual = 14181
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3172 ; free virtual = 14480
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: f0cf80f1
+Phase 3.3 Area Swap Optimization | Checksum: 144d4e835
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 658 ; free virtual = 14181
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3172 ; free virtual = 14480
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 12ae6f429
+Phase 3.4 Pipeline Register Optimization | Checksum: 1569c57ec
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 658 ; free virtual = 14181
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3172 ; free virtual = 14480
 
 Phase 3.5 Fast Optimization
-Phase 3.5 Fast Optimization | Checksum: 5289bb8f
+Phase 3.5 Fast Optimization | Checksum: 187345c66
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 658 ; free virtual = 14181
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3172 ; free virtual = 14480
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 10109679f
+Phase 3.6 Small Shape Detail Placement | Checksum: 18068c149
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 657 ; free virtual = 14179
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3170 ; free virtual = 14478
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 133695171
+Phase 3.7 Re-assign LUT pins | Checksum: 1f087ff89
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 658 ; free virtual = 14181
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3170 ; free virtual = 14478
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 16d3dbc39
+Phase 3.8 Pipeline Register Optimization | Checksum: 1352208ed
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 658 ; free virtual = 14181
-Phase 3 Detail Placement | Checksum: 16d3dbc39
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3170 ; free virtual = 14478
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 658 ; free virtual = 14181
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 2520fd246
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3171 ; free virtual = 14479
+Phase 3 Detail Placement | Checksum: 2520fd246
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3171 ; free virtual = 14479
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -347,59 +403,59 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 1753781ef
+Post Placement Optimization Initialization | Checksum: 2c68782f6
 
 Phase 4.1.1.1 BUFG Insertion
 INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
-Phase 4.1.1.1 BUFG Insertion | Checksum: 1753781ef
+Phase 4.1.1.1 BUFG Insertion | Checksum: 2c68782f6
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 656 ; free virtual = 14179
-INFO: [Place 30-746] Post Placement Timing Summary WNS=0.500. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 12f8f54c2
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3169 ; free virtual = 14478
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.531. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1dd707efc
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 655 ; free virtual = 14178
-Phase 4.1 Post Commit Optimization | Checksum: 12f8f54c2
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3169 ; free virtual = 14477
+Phase 4.1 Post Commit Optimization | Checksum: 1dd707efc
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 655 ; free virtual = 14178
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3169 ; free virtual = 14477
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 12f8f54c2
+Phase 4.2 Post Placement Cleanup | Checksum: 1dd707efc
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 655 ; free virtual = 14178
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3170 ; free virtual = 14478
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 12f8f54c2
+Phase 4.3 Placer Reporting | Checksum: 1dd707efc
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 657 ; free virtual = 14179
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3170 ; free virtual = 14478
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 657 ; free virtual = 14179
-Phase 4.4 Final Placement Cleanup | Checksum: 129f39998
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3170 ; free virtual = 14478
+Phase 4.4 Final Placement Cleanup | Checksum: 1df174104
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 657 ; free virtual = 14179
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 129f39998
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3170 ; free virtual = 14478
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1df174104
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 657 ; free virtual = 14179
-Ending Placer Task | Checksum: 60baf8b5
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3170 ; free virtual = 14478
+Ending Placer Task | Checksum: 1218860d2
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 657 ; free virtual = 14179
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3170 ; free virtual = 14478
 INFO: [Common 17-83] Releasing license: Implementation
-81 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+131 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 664 ; free virtual = 14187
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 664 ; free virtual = 14187
+place_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3178 ; free virtual = 14486
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3178 ; free virtual = 14486
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.40 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 656 ; free virtual = 14182
+Write XDEF Complete: Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3164 ; free virtual = 14476
 INFO: [Common 17-1381] The checkpoint '/home/ICer/Project/project_skeleton_sp22/hardware/z1top_proj/z1top_proj.runs/impl_1/z1top_placed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_io -file z1top_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 649 ; free virtual = 14172
+report_io: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3162 ; free virtual = 14471
 INFO: [runtcl-4] Executing : report_utilization -file z1top_utilization_placed.rpt -pb z1top_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file z1top_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 659 ; free virtual = 14183
+report_control_sets: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3173 ; free virtual = 14482
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -411,41 +467,41 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 6 CPUs
-Checksum: PlaceDB: 2c696970 ConstDB: 0 ShapeSum: 34518f45 RouteDB: 0
+Checksum: PlaceDB: 2871a685 ConstDB: 0 ShapeSum: f916ba4d RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 131e82e07
+Phase 1 Build RT Design | Checksum: 143ffa577
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 557 ; free virtual = 14081
-Post Restoration Checksum: NetGraph: 3e384333 NumContArr: f3afead4 Constraints: 0 Timing: 0
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3069 ; free virtual = 14378
+Post Restoration Checksum: NetGraph: 48210132 NumContArr: fbdea445 Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 131e82e07
+Phase 2.1 Create Timer | Checksum: 143ffa577
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 525 ; free virtual = 14049
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3037 ; free virtual = 14347
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 131e82e07
+Phase 2.2 Fix Topology Constraints | Checksum: 143ffa577
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 501 ; free virtual = 14024
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3013 ; free virtual = 14322
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 131e82e07
+Phase 2.3 Pre Route Cleanup | Checksum: 143ffa577
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 501 ; free virtual = 14024
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3013 ; free virtual = 14322
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 1314b6271
+Phase 2.4 Update Timing | Checksum: 1e091dea0
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 490 ; free virtual = 14014
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.811  | TNS=0.000  | WHS=-0.226 | THS=-109.262|
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3003 ; free virtual = 14313
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.768  | TNS=0.000  | WHS=-0.217 | THS=-108.650|
 
-Phase 2 Router Initialization | Checksum: c9bcdbfb
+Phase 2 Router Initialization | Checksum: 21ca4c909
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2721.059 ; gain = 0.000 ; free physical = 488 ; free virtual = 14012
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3001 ; free virtual = 14310
 
 Router Utilization Summary
   Global Vertical Routing Utilization    = 0 %
@@ -453,93 +509,98 @@ Router Utilization Summary
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 2359
+  Number of Failed Nets               = 2348
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 2359
+  Number of Unrouted Nets             = 2348
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 24a436c8f
+Phase 3 Initial Routing | Checksum: 22844864
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 2735.031 ; gain = 13.973 ; free physical = 481 ; free virtual = 14005
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:15 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 2986 ; free virtual = 14296
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 1216
- Number of Nodes with overlaps = 446
- Number of Nodes with overlaps = 265
- Number of Nodes with overlaps = 130
- Number of Nodes with overlaps = 45
- Number of Nodes with overlaps = 14
- Number of Nodes with overlaps = 6
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.056 | TNS=-0.056 | WHS=N/A    | THS=N/A    |
-
-Phase 4.1 Global Iteration 0 | Checksum: 18a14e2e7
-
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:21 . Memory (MB): peak = 2735.031 ; gain = 13.973 ; free physical = 483 ; free virtual = 14007
-
-Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 146
- Number of Nodes with overlaps = 51
- Number of Nodes with overlaps = 42
- Number of Nodes with overlaps = 31
- Number of Nodes with overlaps = 11
- Number of Nodes with overlaps = 10
- Number of Nodes with overlaps = 6
- Number of Nodes with overlaps = 9
- Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1143
+ Number of Nodes with overlaps = 429
+ Number of Nodes with overlaps = 281
+ Number of Nodes with overlaps = 155
+ Number of Nodes with overlaps = 105
+ Number of Nodes with overlaps = 53
+ Number of Nodes with overlaps = 32
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.137  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.300 | TNS=-3.118 | WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: 1422af0a5
+Phase 4.1 Global Iteration 0 | Checksum: 7686325a
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:26 . Memory (MB): peak = 2735.031 ; gain = 13.973 ; free physical = 484 ; free virtual = 14008
-Phase 4 Rip-up And Reroute | Checksum: 1422af0a5
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:31 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 2995 ; free virtual = 14304
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:26 . Memory (MB): peak = 2735.031 ; gain = 13.973 ; free physical = 484 ; free virtual = 14008
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 636
+ Number of Nodes with overlaps = 358
+ Number of Nodes with overlaps = 110
+ Number of Nodes with overlaps = 75
+ Number of Nodes with overlaps = 40
+ Number of Nodes with overlaps = 21
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.188  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 184bad7ad
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:00:50 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 2993 ; free virtual = 14303
+Phase 4 Rip-up And Reroute | Checksum: 184bad7ad
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:00:50 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 2993 ; free virtual = 14303
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
-Phase 5.1 Delay CleanUp | Checksum: 1422af0a5
+Phase 5.1 Delay CleanUp | Checksum: 184bad7ad
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:26 . Memory (MB): peak = 2735.031 ; gain = 13.973 ; free physical = 484 ; free virtual = 14008
+Time (s): cpu = 00:01:41 ; elapsed = 00:00:50 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 2993 ; free virtual = 14303
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 1422af0a5
+Phase 5.2 Clock Skew Optimization | Checksum: 184bad7ad
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:26 . Memory (MB): peak = 2735.031 ; gain = 13.973 ; free physical = 484 ; free virtual = 14008
-Phase 5 Delay and Skew Optimization | Checksum: 1422af0a5
+Time (s): cpu = 00:01:41 ; elapsed = 00:00:50 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 2993 ; free virtual = 14303
+Phase 5 Delay and Skew Optimization | Checksum: 184bad7ad
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:26 . Memory (MB): peak = 2735.031 ; gain = 13.973 ; free physical = 484 ; free virtual = 14008
+Time (s): cpu = 00:01:41 ; elapsed = 00:00:50 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 2993 ; free virtual = 14303
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 169fbdc1f
+Phase 6.1.1 Update Timing | Checksum: 18b5ae5f7
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:26 . Memory (MB): peak = 2735.031 ; gain = 13.973 ; free physical = 484 ; free virtual = 14008
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.137  | TNS=0.000  | WHS=0.098  | THS=0.000  |
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:50 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 2993 ; free virtual = 14303
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.191  | TNS=0.000  | WHS=0.060  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 169fbdc1f
+Phase 6.1 Hold Fix Iter | Checksum: 18b5ae5f7
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:26 . Memory (MB): peak = 2735.031 ; gain = 13.973 ; free physical = 484 ; free virtual = 14008
-Phase 6 Post Hold Fix | Checksum: 169fbdc1f
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:51 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 2993 ; free virtual = 14303
+Phase 6 Post Hold Fix | Checksum: 18b5ae5f7
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:26 . Memory (MB): peak = 2735.031 ; gain = 13.973 ; free physical = 484 ; free virtual = 14008
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:51 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 2993 ; free virtual = 14303
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 1.85123 %
-  Global Horizontal Routing Utilization  = 2.00312 %
+  Global Vertical Routing Utilization    = 2.30886 %
+  Global Horizontal Routing Utilization  = 2.27212 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -549,47 +610,47 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 14f05c496
+Phase 7 Route finalize | Checksum: 155296008
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:26 . Memory (MB): peak = 2735.031 ; gain = 13.973 ; free physical = 484 ; free virtual = 14008
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:51 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 2993 ; free virtual = 14303
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 14f05c496
+Phase 8 Verifying routed nets | Checksum: 155296008
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:26 . Memory (MB): peak = 2735.031 ; gain = 13.973 ; free physical = 483 ; free virtual = 14007
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:51 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 2993 ; free virtual = 14303
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 16e76bd29
+Phase 9 Depositing Routes | Checksum: 143197097
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:26 . Memory (MB): peak = 2735.031 ; gain = 13.973 ; free physical = 483 ; free virtual = 14007
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:51 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 2993 ; free virtual = 14303
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.137  | TNS=0.000  | WHS=0.098  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.191  | TNS=0.000  | WHS=0.060  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 16e76bd29
+Phase 10 Post Router Timing | Checksum: 143197097
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:26 . Memory (MB): peak = 2735.031 ; gain = 13.973 ; free physical = 486 ; free virtual = 14010
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:51 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 2997 ; free virtual = 14306
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:26 . Memory (MB): peak = 2735.031 ; gain = 13.973 ; free physical = 512 ; free virtual = 14035
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:51 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3023 ; free virtual = 14333
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-99 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+149 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:30 . Memory (MB): peak = 2735.031 ; gain = 13.973 ; free physical = 512 ; free virtual = 14035
+route_design: Time (s): cpu = 00:01:45 ; elapsed = 00:00:54 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3023 ; free virtual = 14333
 INFO: [Common 17-600] The following parameters have non-default value.
 general.maxThreads
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2735.031 ; gain = 0.000 ; free physical = 512 ; free virtual = 14035
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3023 ; free virtual = 14333
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2735.031 ; gain = 0.000 ; free physical = 502 ; free virtual = 14031
+Write XDEF Complete: Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2721.961 ; gain = 0.000 ; free physical = 3009 ; free virtual = 14324
 INFO: [Common 17-1381] The checkpoint '/home/ICer/Project/project_skeleton_sp22/hardware/z1top_proj/z1top_proj.runs/impl_1/z1top_routed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file z1top_drc_routed.rpt -pb z1top_drc_routed.pb -rpx z1top_drc_routed.rpx
 Command: report_drc -file z1top_drc_routed.rpt -pb z1top_drc_routed.pb -rpx z1top_drc_routed.rpx
@@ -609,7 +670,7 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-112 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+162 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 INFO: [runtcl-4] Executing : report_route_status -file z1top_route_status.rpt -pb z1top_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file z1top_timing_summary_routed.rpt -pb z1top_timing_summary_routed.pb -rpx z1top_timing_summary_routed.rpx -warn_on_violation 
@@ -637,26 +698,26 @@ WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Nei
 
 Refer to the device configuration user guide for more information.
 WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[18]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[19]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[20]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[21]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[22]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[23]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[24]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[26]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[27]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[28]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[29]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/bios_mem/read_data0_reg_reg_0 has an input control pin cpu/bios_mem/read_data0_reg_reg_0/ADDRARDADDR[14] (net: cpu/bios_mem/ADDRARDADDR[10]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[30]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[18]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[19]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[20]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[21]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[22]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[23]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[24]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[26]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[27]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[28]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[29]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 cpu/dmem/mem_reg_0_0 has an input control pin cpu/dmem/mem_reg_0_0/ADDRARDADDR[14] (net: cpu/dmem/alu[3]) which is driven by a register (cpu/Cycle_Counters_u1/cycles_reg[30]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 INFO: [Vivado 12-3199] DRC finished with 0 Errors, 22 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Designutils 20-2272] Running write_bitstream with 6 threads.
@@ -670,7 +731,7 @@ Writing bitstream ./z1top.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
 INFO: [Common 17-83] Releasing license: Implementation
-131 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+181 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2975.609 ; gain = 192.555 ; free physical = 471 ; free virtual = 14000
-INFO: [Common 17-206] Exiting Vivado at Fri Aug  4 02:17:12 2023...
+write_bitstream: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2977.293 ; gain = 205.328 ; free physical = 2984 ; free virtual = 14299
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  5 21:56:30 2023...
