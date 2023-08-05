@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Jul 24 16:56:35 2023
-# Process ID: 55495
+# Start of session at: Fri Aug  4 16:36:15 2023
+# Process ID: 119279
 # Current directory: /home/ICer/Project/project_skeleton_sp22/hardware
-# Command line: vivado -mode batch -source scripts/build_project.tcl -tclargs z1top 15
+# Command line: vivado -mode batch -source scripts/program_fpga.tcl -tclargs bitstream_files/z1top.bit
 # Log file: /home/ICer/Project/project_skeleton_sp22/hardware/vivado.log
 # Journal file: /home/ICer/Project/project_skeleton_sp22/hardware/vivado.jou
 #-----------------------------------------------------------
-source scripts/build_project.tcl
+source scripts/program_fpga.tcl

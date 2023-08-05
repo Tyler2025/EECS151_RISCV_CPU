@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Aug  4 17:24:31 2023
+# Process ID: 1476
+# Current directory: /home/ICer/Project/project_skeleton_sp22/hardware/z1top_proj/z1top_proj.runs/synth_2
+# Command line: vivado -log z1top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source z1top.tcl
+# Log file: /home/ICer/Project/project_skeleton_sp22/hardware/z1top_proj/z1top_proj.runs/synth_2/z1top.vds
+# Journal file: /home/ICer/Project/project_skeleton_sp22/hardware/z1top_proj/z1top_proj.runs/synth_2/vivado.jou
+#-----------------------------------------------------------
+source z1top.tcl -notrace

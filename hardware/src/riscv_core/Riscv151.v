@@ -175,27 +175,48 @@ module Riscv151 #(
   // TODO: Your code to implement a fully functioning RISC-V core
   // Add as many modules as you want
   // Feel free to move the memory modules around
-  wire [1:0] pcsrc;
+  wire [2:0] pcsrc;
   wire [31:0] alu;
   wire [31:0] pc;
   wire [31:0] next_pc;
+  wire [31:0] jal_addr;
+  wire [31:0] inst;
+  wire [31:0] Imm;
+  wire br_pred_taken;
+  wire is_br_guess,is_br_check,br_taken_check;
+
   assign imem_addra = next_pc[15:2];
   assign bios_addra = next_pc[12:2];
   //IF Phase
+  assign jal_addr = pc + Imm;
   pc_reg #(
     	.RESET_PC(RESET_PC)
     ) pc_reg_u1(
 	.clk(clk),
 	.rst_n(rst),
+	.br_pred_taken(br_pred_taken),
 	.pcsrc(pcsrc),
 	.alu_addr(alu),
+      .inst(inst),
+      .jal_addr(jal_addr),
+	.restore_addr(pcplusfour),
 	.pc(pc),
 	.next_pc(next_pc)
 	);
 
+  assign is_br_guess = (inst[6:2] == 5'b11000)? 1'b1 : 1'b0;//branch inst judgement
+  branch_predictor branch_predictor_u1(//2 bit branch predictor
+	.clk(clk),
+	.reset(!rst),
+	.pc_guess(pc),
+	.is_br_guess(is_br_guess),
+	.pc_check(EXM_pc),
+	.is_br_check(is_br_check),
+	.br_taken_check(br_taken_check),
+	.br_pred_taken(br_pred_taken)
+  );  
   //ID Phase
-  wire [31:0] inst_src;
-  wire [31:0] inst;//inst and stall mux
+  wire [31:0] inst_src;//inst and stall mux
   wire stall;
   assign inst_src = pc[30] ? bios_douta : imem_douta;//if pc[30] == 1 then from bios else from iMEM
   assign inst = stall ? 32'h00000013 : inst_src;//if stall then nop else inst_src 
@@ -222,7 +243,6 @@ module Riscv151 #(
 	.RegWen(RegWen)
   	);
 
-  wire [31:0] Imm;
   immgen imm_gen_u1(//imm generator
 	 .inst(inst),
 	 .immsel(ImmSel),
@@ -243,6 +263,7 @@ module Riscv151 #(
   wire EXM_RegWen;
   id_exm_regs id_exm_regs_u1(//ID/EXM pipeline register
 	.clk(clk),
+	.br_pred_taken(br_pred_taken),
 	.pc(pc),
 	.rs1(regq1),
 	.rs2(regq2),
@@ -258,6 +279,7 @@ module Riscv151 #(
 	.RegWen(RegWen),
 	.Inst(inst),
 
+	.br_pred_taken_o(EXM_br_pred_taken),
 	.pc_o(EXM_pc),
 	.rs1_o(EXM_rs1),
 	.rs2_o(EXM_rs2),
@@ -313,15 +335,19 @@ module Riscv151 #(
 	.clk(clk),
 	.BrEq(BrEq),
 	.BrLt(BrLt),
+	.br_pred_taken_o(EXM_br_pred_taken),
 	.inst(EXM_inst),
 	.rst_n(rst),
-	.src(pcsrc)
+	.src(pcsrc),
+	.stall(stall),
+	.is_br_check(is_br_check),
+	.br_taken_check(br_taken_check)
   );
-
+  /*
   Stall Stall_u1(//stall
 	.pcsrc(pcsrc),
 	.stall(stall)
-  );
+  );*/
   WEN_align WEN_align_u1(//WEN align
 	.MEMWen_in(EXM_MEMWen),
 	.address(alu),

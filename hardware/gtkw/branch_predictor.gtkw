@@ -1,0 +1,44 @@
+[*]
+[*] GTKWave Analyzer v3.3.61 (w)1999-2014 BSI
+[*] Thu Aug  3 17:50:57 2023
+[*]
+[dumpfile] "/home/ICer/Project/project_skeleton_sp22/hardware/isa_testbench.vcd"
+[dumpfile_mtime] "Thu Aug  3 17:42:01 2023"
+[dumpfile_size] 2392704
+[savefile] "/home/ICer/Project/project_skeleton_sp22/hardware/gtkw/branch_predictor.gtkw"
+[timestart] 3233300
+[size] 1920 977
+[pos] -51 -51
+*-15.404778 3378400 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] isa_testbench.
+[treeopen] isa_testbench.CPU.
+[sst_width] 259
+[signals_width] 166
+[sst_expanded] 1
+[sst_vpaned_height] 519
+@28
+isa_testbench.clk
+@22
+isa_testbench.csr[31:0]
+@28
+isa_testbench.rst
+@23
+isa_testbench.CPU.pc_reg_u1.pc[31:0]
+@28
+isa_testbench.CPU.branch_predictor_u1.br_pred_taken
+@22
+isa_testbench.CPU.EXM_inst[31:0]
+isa_testbench.CPU.inst[31:0]
+@28
+isa_testbench.CPU.EXM_br_pred_taken
+isa_testbench.CPU.PCSrc_u1.br_taken_check
+isa_testbench.CPU.PCSrc_u1.is_br_check
+isa_testbench.CPU.PCSrc_u1.stall
+isa_testbench.CPU.PCSrc_u1.br_pred_taken_o
+isa_testbench.CPU.PCSrc_u1.BrEq
+isa_testbench.CPU.PCSrc_u1.BrLt
+isa_testbench.CPU.PCSrc_u1.src[1:0]
+@22
+isa_testbench.CPU.EXM_pc[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

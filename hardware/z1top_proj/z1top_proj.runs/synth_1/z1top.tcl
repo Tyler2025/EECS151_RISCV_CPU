@@ -43,15 +43,18 @@ read_verilog -library xil_defaultlib {
   /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/PCSrc.v
   /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/REG_FILES.v
   /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/Riscv151.v
-  /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Stall.v
   /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/Uart_if.v
   /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/WEN_align.v
+  /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/bp_cache.v
+  /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/branch_predictor.v
+  /home/ICer/Project/project_skeleton_sp22/hardware/src/clk_wiz.v
   /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/control.v
   /home/ICer/Project/project_skeleton_sp22/hardware/src/io_circuits/debouncer.v
   /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/EXM/exm_wb_regs.v
   /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/id_exm_regs.v
   /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/ID/immgen.v
   /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/pc_reg.v
+  /home/ICer/Project/project_skeleton_sp22/hardware/src/riscv_core/IF/sat_updn.v
   /home/ICer/Project/project_skeleton_sp22/hardware/src/io_circuits/synchronizer.v
   /home/ICer/Project/project_skeleton_sp22/hardware/src/io_circuits/uart_receiver.v
   /home/ICer/Project/project_skeleton_sp22/hardware/src/io_circuits/uart_transmitter.v

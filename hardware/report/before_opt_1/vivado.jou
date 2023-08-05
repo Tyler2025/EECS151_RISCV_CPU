@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jul 27 11:15:57 2023
+# Process ID: 68537
+# Current directory: /home/ICer/Project/project_skeleton_sp22/hardware/report/before_opt_1
+# Command line: vivado
+# Log file: /home/ICer/Project/project_skeleton_sp22/hardware/report/before_opt_1/vivado.log
+# Journal file: /home/ICer/Project/project_skeleton_sp22/hardware/report/before_opt_1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ICer/Project/project_skeleton_sp22/hardware/z1top_proj/z1top_proj.xpr
+update_compile_order -fileset sources_1
+open_run impl_1

@@ -6,7 +6,7 @@
 ## Clock signal 125 MHz
 
 set_property -dict { PACKAGE_PIN W19   IOSTANDARD LVCMOS33 } [get_ports { CLK_125MHZ_FPGA }]; #IO_L13P_T2_MRCC_35 Sch=sysclk
-create_clock -add -name sys_clk_pin -period 20.00 -waveform {0 10} [get_ports { CLK_125MHZ_FPGA }];
+create_clock -name sys_clk_pin -period 20.00 -waveform {0 10} -add [get_ports { CLK_125MHZ_FPGA }];
 
 ## RGB LEDs
 

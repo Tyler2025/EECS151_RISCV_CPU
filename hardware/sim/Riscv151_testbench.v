@@ -200,7 +200,7 @@ module Riscv151_testbench();
 
     @(negedge clk);
     rst = 1;
-/*
+
     // Test R-Type Insts --------------------------------------------------
     // - ADD, SUB, SLL, SLT, SLTU, XOR, OR, AND, SRL, SRA
     // - SLLI, SRLI, SRAI
@@ -660,7 +660,7 @@ module Riscv151_testbench();
 
     check_result_dmem(DATA_ADDR1, `RF_PATH.mem[4], "Hazard 9");
 	
-	*/
+	
     // Hazard to Branch operands
     reset();
     init_rf();

@@ -1,5 +1,6 @@
 module id_exm_regs(
     input clk,
+    input br_pred_taken,
     input [31:0] pc,rs1,rs2,imm,
     input BrUn,BSel,ASel,
     input [3:0] ALUSel,MEMWen,
@@ -8,6 +9,7 @@ module id_exm_regs(
     input [1:0] WBSel,
     input RegWen,
     input [31:0] Inst,
+    output reg br_pred_taken_o,
     output reg [31:0] pc_o,rs1_o,rs2_o,imm_o,
     output reg BrUn_o,BSel_o,ASel_o,
     output reg [3:0] ALUSel_o,MEMWen_o,
@@ -23,6 +25,7 @@ module id_exm_regs(
         pc_o    <= pc;
         rs1_o   <= rs1;
         rs2_o   <= rs2;
+	  br_pred_taken_o	<= br_pred_taken;
         imm_o   <= imm;
         BrUn_o  <= BrUn;
         BSel_o  <= BSel;
